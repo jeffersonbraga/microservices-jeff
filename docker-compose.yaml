@@ -24,3 +24,16 @@ services:
       - 8761
     depends_on:
       - config
+
+  tickers:
+    container_name: tickers
+    image: jeffersonbraga/tickers:1.0
+    restart: always
+    environment:
+      CONFIG_SERVER_URL: 'http://config:8888'
+    ports:
+      - 8085:8085
+    expose:
+      - 8085
+    depends_on:
+      - config
