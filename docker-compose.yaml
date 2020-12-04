@@ -14,7 +14,7 @@ services:
 
   discovery:
     container_name: discovery
-    image: jeffersonbraga/discovery:2.0
+    image: jeffersonbraga/discovery:1.0
     restart: always
     environment:
       CONFIG_SERVER_URL: 'http://config:8888'
