@@ -5,16 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="006248c7-e926-4c54-8776-5d4ca5a975d4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/data/tickers.mv.db" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/tickers.trace.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/properties/tickers.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tickers/data/tickers.mv.db" beforeDir="false" afterPath="$PROJECT_DIR$/tickers/data/tickers.mv.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tickers/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/tickers/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tickers.mv.db" beforeDir="false" afterPath="$PROJECT_DIR$/data/tickers.mv.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tickers.trace.db" beforeDir="false" afterPath="$PROJECT_DIR$/data/tickers.trace.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tickers/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/tickers/src/main/resources/bootstrap.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +55,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="dart.analysis.tool.window.visible" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/properties" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.19652651" />
@@ -163,7 +158,7 @@
       <workItem from="1607047419980" duration="5788000" />
       <workItem from="1607054513278" duration="1556000" />
       <workItem from="1607056143909" duration="5806000" />
-      <workItem from="1607063232427" duration="4998000" />
+      <workItem from="1607063232427" duration="5926000" />
     </task>
     <task id="LOCAL-00001" summary="Init">
       <created>1607047737702</created>
@@ -214,7 +209,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607064529424</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Tickers">
+      <created>1607095409121</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1607095409121</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -236,7 +238,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Init" />
     <MESSAGE value="Config e Discovery" />
-    <option name="LAST_COMMIT_MESSAGE" value="Config e Discovery" />
+    <MESSAGE value="Tickers" />
+    <option name="LAST_COMMIT_MESSAGE" value="Tickers" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
