@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>br.com.jeffersonbraga</groupId>
-	<artifactId>config</artifactId>
+	<artifactId>tickers</artifactId>
 	<version>1.0</version>
-	<name>config</name>
+	<name>tickers</name>
 	<description>Demo project for Spring Boot</description>
 
 	<properties>
@@ -21,10 +21,35 @@
 
 	<dependencies>
 		<dependency>
+			<groupId>org.flywaydb</groupId>
+			<artifactId>flyway-core</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-activemq</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-jpa</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+		<dependency>
 			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-config-server</artifactId>
+			<artifactId>spring-cloud-starter-config</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
 		</dependency>
 
+		<dependency>
+			<groupId>com.h2database</groupId>
+			<artifactId>h2</artifactId>
+			<scope>runtime</scope>
+		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
@@ -56,6 +81,7 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
+
 			<plugin>
 				<groupId>com.google.cloud.tools</groupId>
 				<artifactId>jib-maven-plugin</artifactId>
@@ -65,14 +91,14 @@
 						<image>openjdk:15-jdk-slim-buster</image>
 					</from>
 					<to>
-						<image>jeffersonbraga/config:${version}</image>
+						<image>jeffersonbraga/tickers:${version}</image>
 					</to>
 					<container>
 						<jvmFlags>
 							<jvmFlag>-Xms128m</jvmFlag>
 							<jvmFlag>-Xmx256m</jvmFlag>
 						</jvmFlags>
-						<mainClass>br.com.jeffersonbraga.config.ConfigApplication</mainClass>
+						<mainClass>br.com.jeffersonbraga.tickers.TickersApplication</mainClass>
 					</container>
 				</configuration>
 			</plugin>
