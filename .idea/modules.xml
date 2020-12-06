@@ -4,8 +4,10 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/config/config.iml" filepath="$PROJECT_DIR$/config/config.iml" />
       <module fileurl="file://$PROJECT_DIR$/discovery/discovery.iml" filepath="$PROJECT_DIR$/discovery/discovery.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gateway/gateway.iml" filepath="$PROJECT_DIR$/gateway/gateway.iml" />
       <module fileurl="file://$PROJECT_DIR$/root.iml" filepath="$PROJECT_DIR$/root.iml" />
       <module fileurl="file://$PROJECT_DIR$/tickers/tickers.iml" filepath="$PROJECT_DIR$/tickers/tickers.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tickers-manager/tickers-manager.iml" filepath="$PROJECT_DIR$/tickers-manager/tickers-manager.iml" />
     </modules>
   </component>
 </project>
