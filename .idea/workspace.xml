@@ -4,52 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="006248c7-e926-4c54-8776-5d4ca5a975d4" name="Default Changelist" comment="Tickers config">
-      <change afterPath="$PROJECT_DIR$/gateway/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gateway/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gateway/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gateway/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gateway/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gateway/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gateway/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gateway/src/main/java/br/com/jeffersonbraga/gateway/GatewayApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gateway/src/main/resources/bootstrap.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gateway/src/test/java/br/com/jeffersonbraga/gateway/GatewayApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/properties/gateway.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/properties/tickers-manager.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tickers-manager/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tickers-manager/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tickers-manager/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tickers-manager/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tickers-manager/data/tickers.mv.db" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tickers-manager/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tickers-manager/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tickers-manager/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tickers-manager/src/main/java/br/com/jeffersonbraga/tickers/TickersManagerApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tickers-manager/src/main/java/br/com/jeffersonbraga/tickers/api/TickerManagerApi.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tickers-manager/src/main/java/br/com/jeffersonbraga/tickers/model/history/TickerHistory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tickers-manager/src/main/java/br/com/jeffersonbraga/tickers/model/ticker/Ticker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tickers-manager/src/main/resources/bootstrap.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tickers-manager/src/main/resources/db/migration/V1_1__init.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tickers-manager/src/test/java/br/com/jeffersonbraga/tickers/TickersApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tickers/src/main/java/br/com/jeffersonbraga/tickers/api/TickerApi.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tickers/src/main/java/br/com/jeffersonbraga/tickers/api/TickerHistoryApi.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tickers/src/main/java/br/com/jeffersonbraga/tickers/api/TickerManagerApi.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tickers/src/main/java/br/com/jeffersonbraga/tickers/model/history/TickerHistory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tickers/src/main/java/br/com/jeffersonbraga/tickers/model/ticker/Ticker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tickers/src/main/java/br/com/jeffersonbraga/tickers/repository/TickerHistoryRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tickers/src/main/java/br/com/jeffersonbraga/tickers/repository/TickerRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+    <list default="true" id="006248c7-e926-4c54-8776-5d4ca5a975d4" name="Default Changelist" comment="Gateway">
+      <change afterPath="$PROJECT_DIR$/.run/ToDocker.run.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tickers/src/main/java/br/com/jeffersonbraga/tickers/api/TickerBuyApi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tickers/src/main/java/br/com/jeffersonbraga/tickers/model/buyticker/BuyTicker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tickers/src/main/java/br/com/jeffersonbraga/tickers/repository/BuyTickerRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tickers/src/main/resources/db/migration/V1_2__buyticker.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/tickers.mv.db" beforeDir="false" afterPath="$PROJECT_DIR$/data/tickers.mv.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/tickers.trace.db" beforeDir="false" afterPath="$PROJECT_DIR$/data/tickers.trace.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/properties/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/properties/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/properties/tickers.properties" beforeDir="false" afterPath="$PROJECT_DIR$/properties/tickers.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tickers/data/tickers.mv.db" beforeDir="false" afterPath="$PROJECT_DIR$/tickers/data/tickers.mv.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tickers/src/main/java/br/com/jeffersonbraga/tickers/api/TickerManagerApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/tickers/src/main/java/br/com/jeffersonbraga/tickers/api/TickerManagerApi.java" afterDir="false" />
     </list>
     <list id="a58228df-28f4-4852-8f6a-0c28faa11e06" name="ConfiguracaoIDE" comment="ConfiguracaoIDE" />
     <option name="SHOW_DIALOG" value="false" />
@@ -104,12 +68,12 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="dart.analysis.tool.window.visible" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/gateway/pom.xml" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/tickers/src/main/resources/db/migration" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.19652651" />
     <property name="project.structure.side.proportion" value="0.15347135" />
-    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.repository.indices" />
+    <property name="settings.editor.selected.configurable" value="preferences.language.Kotlin" />
     <property name="show.migrate.to.gradle.popup" value="false" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -118,6 +82,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/tickers/src/main/resources/db/migration" />
+      <recent name="$PROJECT_DIR$/tickers/src/main/java/br/com/jeffersonbraga/tickers" />
       <recent name="$PROJECT_DIR$/properties" />
       <recent name="$PROJECT_DIR$" />
     </key>
@@ -125,8 +91,8 @@
       <recent name="$PROJECT_DIR$/properties" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="br.com.jeffersonbraga.tickers.api" />
       <recent name="br.com.jeffersonbraga.tickers.repository" />
+      <recent name="br.com.jeffersonbraga.tickers.api" />
       <recent name="br.com.jeffersonbraga.tickers.model" />
     </key>
   </component>
@@ -149,14 +115,16 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.All in tickers-manager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+  <component name="RunManager" selected="Spring Boot.TickersApplication">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -215,13 +183,14 @@
       <item itemvalue="Spring Boot.ConfigApplication" />
       <item itemvalue="Spring Boot.TickersApplication" />
       <item itemvalue="Spring Boot.TickersManagerApplication" />
-      <item itemvalue="Spring Boot.DiscoveryApplication" />
       <item itemvalue="Spring Boot.GatewayApplication" />
+      <item itemvalue="Spring Boot.DiscoveryApplication" />
+      <item itemvalue="Maven.ToDocker" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.All in tickers-manager" />
         <item itemvalue="Spring Boot.DiscoveryApplication" />
+        <item itemvalue="JUnit.All in tickers-manager" />
       </list>
     </recent_temporary>
   </component>
@@ -246,7 +215,15 @@
       <workItem from="1607063232427" duration="7772000" />
       <workItem from="1607105099203" duration="20329000" />
       <workItem from="1607229067409" duration="4760000" />
-      <workItem from="1607261711469" duration="9589000" />
+      <workItem from="1607261711469" duration="13321000" />
+      <workItem from="1607302868060" duration="341000" />
+      <workItem from="1607337411242" duration="3680000" />
+      <workItem from="1607351728790" duration="651000" />
+      <workItem from="1607352936471" duration="88000" />
+      <workItem from="1607360726533" duration="625000" />
+      <workItem from="1607363290329" duration="4114000" />
+      <workItem from="1607440159549" duration="3125000" />
+      <workItem from="1607458120973" duration="3182000" />
     </task>
     <task id="LOCAL-00001" summary="Init">
       <created>1607047737702</created>
@@ -332,7 +309,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607097514580</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Gateway">
+      <created>1607293775408</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1607293775408</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -356,33 +340,34 @@
     <MESSAGE value="Config e Discovery" />
     <MESSAGE value="Tickers" />
     <MESSAGE value="Tickers config" />
-    <option name="LAST_COMMIT_MESSAGE" value="Tickers config" />
+    <MESSAGE value="Gateway" />
+    <option name="LAST_COMMIT_MESSAGE" value="Gateway" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/com/yahoofinance-api/YahooFinanceAPI/3.5.0/YahooFinanceAPI-3.5.0.jar!/yahoofinance/YahooFinance.class</url>
-          <line>33</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/tickers/src/main/java/br/com/jeffersonbraga/tickers/api/TickerManagerApi.java</url>
-          <line>55</line>
-          <option name="timeStamp" value="8" />
+          <line>108</line>
+          <option name="timeStamp" value="20" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/tickers/src/main/java/br/com/jeffersonbraga/tickers/api/TickerApi.java</url>
-          <line>38</line>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/tickers/src/main/java/br/com/jeffersonbraga/tickers/api/TickerManagerApi.java</url>
-          <line>48</line>
-          <option name="timeStamp" value="10" />
+          <url>file://$PROJECT_DIR$/tickers/src/main/java/br/com/jeffersonbraga/tickers/model/buyticker/BuyTicker.java</url>
+          <line>11</line>
+          <option name="timeStamp" value="22" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="java.util.HashMap$Node" memberName="value" />
+      </pinned-members>
+    </pin-to-top-manager>
+    <watches-manager>
+      <configuration name="SpringBootApplicationConfigurationType">
+        <watch expression="YahooFinance.get(listSearch, false)" language="JAVA" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
