@@ -5,7 +5,7 @@ CREATE TABLE TICKER (
 
 CREATE TABLE TICKER_HISTORY (
                                 ID serial NOT NULL,
-                                ID_TICKER BIGINT NOT NULL,
+                                ID_TICKER TEXT NOT NULL,
                                 DATA TIMESTAMP NOT NULL,
                                 OPEN double precision NOT NULL,
                                 CLOSE double precision NOT NULL,
