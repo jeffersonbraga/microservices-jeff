@@ -1,81 +1,88 @@
 <template>
-  <div style="margin-top: -15px">
-    <mdb-edge-header color="teal darken-2">
-      <div class="category-page-background"></div>
-    </mdb-edge-header>
-    <mdb-container class="free-bird">
-      <mdb-row>
-        <mdb-col md="8" class="mx-auto">
-          <mdb-jumbotron class="pt-4">
-            <h2 class="pb-4"><mdb-icon fab icon="css3" class="text-danger mr-2" /><strong>CSS</strong></h2>
-            <h6 class="my-3">FREE
-              <h1>Your IP is {{ listaTickers.length }}</h1></h6>
-            <mdb-list-group>
-              <mdb-nav-item class="list-group-item list-group-item-action" to="/css/animations">
-                <h5 class="justify-content-between d-flex align-items-center">
-                  Animations<mdb-icon icon="angle-right"/>
-                </h5>
-              </mdb-nav-item>
-              <mdb-nav-item class="list-group-item list-group-item-action" to="/css/background">
-                <h5 class="justify-content-between d-flex align-items-center">
-                  Background Image<mdb-icon icon="angle-right"/>
-                </h5>
-              </mdb-nav-item>
-              <mdb-nav-item class="list-group-item list-group-item-action" to="/css/gradient">
-                <h5 class="justify-content-between d-flex align-items-center">
-                  Gradient<mdb-icon icon="angle-right"/>
-                </h5>
-              </mdb-nav-item>
-              <mdb-nav-item class="list-group-item list-group-item-action" to="/css/hover">
-                <h5 class="justify-content-between d-flex align-items-center">
-                  Hover effects<mdb-icon icon="angle-right"/>
-                </h5>
-              </mdb-nav-item>
-              <mdb-nav-item class="list-group-item list-group-item-action" to="/css/icons">
-                <h5 class="justify-content-between d-flex align-items-center">
-                  Icons <mdb-icon icon="angle-right"/>
-                </h5>
-              </mdb-nav-item>
-              <mdb-nav-item class="list-group-item list-group-item-action" to="/css/masks">
-                <h5 class="justify-content-between d-flex align-items-center">
-                  Masks <mdb-icon icon="angle-right"/>
-                </h5>
-              </mdb-nav-item>
-              <mdb-nav-item class="list-group-item list-group-item-action" to="/css/masonry">
-                <h5 class="justify-content-between d-flex align-items-center">
-                  Masonry <mdb-icon icon="angle-right"/>
-                </h5>
-              </mdb-nav-item>
-              <mdb-nav-item class="list-group-item list-group-item-action" to="/css/scrollbar">
-                <h5 class="justify-content-between d-flex align-items-center">
-                  Scrollbar <mdb-icon icon="angle-right"/>
-                </h5>
-              </mdb-nav-item>
-              <mdb-nav-item class="list-group-item list-group-item-action" to="/css/table">
-                <h5 class="justify-content-between d-flex align-items-center">
-                  Table <mdb-icon icon="angle-right"/>
-                </h5>
-              </mdb-nav-item>
-              <mdb-nav-item class="list-group-item list-group-item-action" to="/css/table-additional">
-                <h5 class="justify-content-between d-flex align-items-center">
-                  Table Additional <mdb-icon icon="angle-right"/>
-                </h5>
-              </mdb-nav-item>
-              <mdb-nav-item class="list-group-item list-group-item-action" to="/css/table-responsive">
-                <h5 class="justify-content-between d-flex align-items-center">
-                  Table Responsive <mdb-icon icon="angle-right"/>
-                </h5>
-              </mdb-nav-item>
-            </mdb-list-group>
-          </mdb-jumbotron>
-        </mdb-col>
-      </mdb-row>
-    </mdb-container>
-  </div>
+  <mdb-container>
+    <mdb-row class="mt-5 align-items-center justify-content-start">
+      <h4 class="demo-title"><strong>Tickers </strong></h4>
+      <a href="https://mdbootstrap.com/docs/vue/components/cards/?utm_source=DemoApp&utm_medium=MDBVueFree" waves-fixed class="border grey-text px-2 border-light rounded ml-2" target="_blank"><mdb-icon icon="graduation-cap" class="mr-2"/>Docs</a>
+    </mdb-row>
+    <hr class="mb-5" />
+    <mdb-row class="mt-5">
+      <mdb-col sm="4">
+        <mdb-card>
+          <mdb-card-image src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%286%29.jpg" alt="Card image cap"></mdb-card-image>
+          <mdb-card-body>
+            <mdb-card-title>Basic card</mdb-card-title>
+            <mdb-card-text>Some quick example text to build on the card title and make up the bulk of the card's content.</mdb-card-text>
+            <mdb-btn color="primary">Button</mdb-btn>
+          </mdb-card-body>
+        </mdb-card>
+      </mdb-col>
+      <mdb-col sm="8">
+        <section class="demo-section">
+          <h4>{{tickerItem.ticker}}</h4>
+          <section>
+            <mdb-tbl striped>
+              <mdb-tbl-head>
+                <tr>
+                  <th>Data</th>
+                  <th>P/M</th>
+                  <th>Qtde</th>
+                  <th>Valor Atual</th>
+                  <th>% Dif.</th>
+                  <th>Investido</th>
+                  <th>Atual</th>
+                </tr>
+              </mdb-tbl-head>
+              <mdb-tbl-body>
+                <tr scope="row">
+                  <td>{{tickerItem.data}}</td>
+                  <td>{{tickerItem.precoMedio}}</td>
+                  <td>{{tickerItem.quantidade}}</td>
+                  <td>{{tickerItem.valorAtual}}</td>
+                  <td>{{tickerItem.diferencaPreco}}</td>
+                  <td>{{tickerItem.valorTotalInvestido}}</td>
+                  <td>{{tickerItem.valorTotalAtual}}</td>
+                </tr>
+                <tr scope="row">
+                  <td>2</td>
+                  <td>tbody col 1</td>
+                  <td>tbody col 2</td>
+                  <td>tbody col 3</td>
+                  <td>tbody col 1</td>
+                  <td>tbody col 2</td>
+                  <td>tbody col 3</td>
+                </tr>
+                <tr scope="row">
+                  <td>3</td>
+                  <td>tbody col 1</td>
+                  <td>tbody col 2</td>
+                  <td>tbody col 3</td>
+                  <td>tbody col 1</td>
+                  <td>tbody col 2</td>
+                  <td>tbody col 3</td>
+                </tr>
+              </mdb-tbl-body>
+            </mdb-tbl>
+          </section>
+        </section>
+      </mdb-col>
+    </mdb-row>
+  </mdb-container>
 </template>
 
 <script>
-import { mdbContainer, mdbRow, mdbCol, mdbIcon, mdbJumbotron, mdbListGroup, mdbNavItem, mdbEdgeHeader } from 'mdbvue';
+import {
+  mdbContainer,
+  mdbRow,
+  mdbCol,
+  mdbCard,
+  mdbCardImage,
+  mdbCardBody,
+  mdbCardTitle,
+  mdbCardText,
+  mdbBtn,
+  mdbIcon,
+  mdbTbl, mdbTblHead, mdbTblBody
+} from 'mdbvue';
 
 export default {
   name: 'TickersPage',
@@ -83,23 +90,23 @@ export default {
     return {
       listaTickers : [],
       tickerItem : {
-        ticker: "ITSA4.SA",
-        data: null,
+        ticker: "",
+        data: "",
         precoMedio: 10,
-        valorAtual: null,
-        diferencaPreco: null,
-        percentualDiferenca: null,
-        quantidade: 111,
-        valorTotalInvestido: 1220,
-        valorTotalAtual: null
+        valorAtual: "",
+        diferencaPreco: "",
+        percentualDiferenca: "",
+        quantidade: "",
+        valorTotalInvestido: "",
+        valorTotalAtual: ""
       }
     }
   },
   mounted() {
-    console.log("mounted: http://localhost:8085/ticker/cards");
     this.$http.get("http://localhost:8085/ticker/cards").then(result => {
-      console.log("mounted: http://localhost:8085/ticker/cards");
-      this.listaTickers.push(result.body);
+      console.log(result.body);
+      this.listaTickers = (result.body);
+      this.tickerItem = this.listaTickers[0];
     }, error => {
       console.error(error);
     });
@@ -107,7 +114,6 @@ export default {
   methods: {
     sendData() {
       this.$http.post("https://httpbin.org/post", this.input, { headers: { "content-type": "application/json" } }).then(result => {
-        console.log("post: http://localhost:8085/ticker/cards");
         this.response = result.data;
       }, error => {
         console.error(error);
@@ -118,54 +124,16 @@ export default {
     mdbContainer,
     mdbRow,
     mdbCol,
-    mdbIcon,
-    mdbJumbotron,
-    mdbListGroup,
-    mdbNavItem,
-    mdbEdgeHeader
+    mdbCard,
+    mdbCardImage,
+    mdbCardBody,
+    mdbCardTitle,
+    mdbCardText,
+    mdbBtn,
+    mdbTbl,
+    mdbTblHead,
+    mdbTblBody,
+    mdbIcon
   }
 };
 </script>
-
-<style scoped>
-h1, h2 {
-  font-weight: normal;
-}
-
-.category-page-background {
-  width: 100%;
-  height: 100%;
-  opacity: 0.1;
-  background: url('https://mdbootstrap.com/wp-content/uploads/2016/11/mdb-pro-min-1.jpg') center;
-  background-size: cover;
-}
-
-.example-components-list {
-  padding-top: 20px;
-}
-
-.example-components-list li {
-  padding: 10px;
-  background-color: white;
-  border-bottom: 1px solid #f7f7f7;
-  transition: .3s;
-}
-
-.example-components-list h6 {
-  padding: 20px 10px 5px 10px;
-  color: grey;
-}
-
-.example-components-list li:hover {
-  background-color: #fafafa;
-}
-
-.example-components-list i {
-  float: right;
-  padding-top: 3px;
-}
-
-.nav-link.navbar-link h5 {
-  color: #212529;
-}
-</style>

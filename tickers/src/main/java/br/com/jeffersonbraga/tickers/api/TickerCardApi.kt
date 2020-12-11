@@ -6,6 +6,7 @@ import br.com.jeffersonbraga.tickers.repository.BuyTickerRepository
 import br.com.jeffersonbraga.tickers.repository.TickerRepository
 import br.com.jeffersonbraga.tickers.repository.TickerHistoryRepository
 import org.springframework.beans.factory.annotation.Autowired
+import org.springframework.web.bind.annotation.CrossOrigin
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.RequestMapping
 import org.springframework.web.bind.annotation.RestController
@@ -23,6 +24,7 @@ class TickerCardApi {
     @Autowired
     private lateinit var historyRepository: TickerHistoryRepository
 
+    @CrossOrigin
     @GetMapping
     fun getCards(): MutableList<TickerCard> {
         val listaTickers = tickerRepository.findAll()
