@@ -1,104 +1,35 @@
-package br.com.jeffersonbraga.tickers.model.history;
+package br.com.jeffersonbraga.tickers.model.history
 
-import javax.persistence.*;
-import java.io.Serializable;
-import java.util.Date;
+import java.io.Serializable
+import java.util.*
+import javax.persistence.*
 
 @Entity
 @Table(name = "TICKER_HISTORY")
-public class TickerHistory implements Serializable {
-
+class TickerHistory : Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "ID")
-    private Long id;
+    var id: Long? = null
 
     @Column(name = "ID_TICKER")
-    private String idTicker;
+    var idTicker: String? = null
 
     @Column(name = "DATA")
-    private Date data;
+    var data: Date? = null
 
     @Column(name = "OPEN")
-    private Long open;
+    var open: Double? = null
 
     @Column(name = "CLOSE")
-    private Long close;
+    var close: Double? = null
 
     @Column(name = "HIGH")
-    private Long high;
+    var high: Double? = null
 
     @Column(name = "LOW")
-    private Long low;
+    var low: Double? = null
 
     @Column(name = "VOLUME")
-    private Long volume;
-
-    public TickerHistory() {
-
-    }
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public String getIdTicker() {
-        return idTicker;
-    }
-
-    public void setIdTicker(String idTicker) {
-        this.idTicker = idTicker;
-    }
-
-    public Date getData() {
-        return data;
-    }
-
-    public void setData(Date data) {
-        this.data = data;
-    }
-
-    public Long getOpen() {
-        return open;
-    }
-
-    public void setOpen(Long open) {
-        this.open = open;
-    }
-
-    public Long getClose() {
-        return close;
-    }
-
-    public void setClose(Long close) {
-        this.close = close;
-    }
-
-    public Long getHigh() {
-        return high;
-    }
-
-    public void setHigh(Long high) {
-        this.high = high;
-    }
-
-    public Long getLow() {
-        return low;
-    }
-
-    public void setLow(Long low) {
-        this.low = low;
-    }
-
-    public Long getVolume() {
-        return volume;
-    }
-
-    public void setVolume(Long volume) {
-        this.volume = volume;
-    }
+    var volume: Double? = null
 }

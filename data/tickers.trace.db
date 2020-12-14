@@ -354,3 +354,1979 @@ SELECT * FROM TICKER  where ticker = "PRNR3" [42122-200]
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.base/java.lang.Thread.run(Thread.java:832)
+2020-12-08 20:06:37 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'FRAS3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:06:37 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'BTTL3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:06:38 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'SPRI5.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:06:38 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'MGLU3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:06:38 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'BSLI3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:06:39 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'GEPA3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:06:39 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'PTNT3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:06:39 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'HAPV3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:06:39 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'ENMT3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:06:40 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'POMO3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:06:40 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'BIDI11.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:06:40 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'ARZZ3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:06:40 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'BBDC3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:06:41 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'ETER3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:06:41 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'SHOW3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:06:41 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'JHSF3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:06:42 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'ECPR3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:06:42 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'TAEE11.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:06:42 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'CTSA3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:06:43 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'FLRY3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:06:43 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'SANB3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:06:43 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'EGIE3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:06:44 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'EQTL3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:06:44 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'TIET4.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:06:45 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'TECN3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:06:45 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'RNEW3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:06:45 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'TIET3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:06:45 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'ENGI11.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:06:46 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'AMAR3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:06:46 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'AZEV3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:06:46 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'COCE5.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:06:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'TASA3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:06:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'ANIM3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:06:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'BRDT3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:06:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'BRGE11.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:06:48 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'LUXM4.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:06:48 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'CLSC3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:06:48 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'BSLI4.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:06:48 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'FESA3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:06:49 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'PLAS3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:06:49 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'AZEV4.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:06:49 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'LEVE3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:06:49 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'ATOM3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:06:50 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'AALR3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:06:50 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'CGAS5.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:06:50 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'USIM3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:06:50 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'DASA3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:06:51 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'BPAC3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:06:51 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'ENEV3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:06:51 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'BBRK3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:06:51 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'CORR4.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:06:52 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'SLCE3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:06:52 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'CSRN3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:06:53 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'EEEL3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:06:53 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'ECPR4.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:06:54 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'RNEW11.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:06:54 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'UNIP6.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:06:54 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'CRPG5.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:06:55 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'SANB4.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:06:55 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'KLBN3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:06:55 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'BRKM3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:06:56 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'AHEB3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:06:56 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'BGIP4.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:06:56 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'CMIG4.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:06:56 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'MYPK3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:06:57 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'HOOT4.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:06:57 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'IGBR3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:06:57 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'RPAD3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:06:58 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'WIZS3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:06:58 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'CRPG6.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:06:58 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'TPIS3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:06:58 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'TIET11.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:06:59 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'AZUL4.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:06:59 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'ALSO3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:06:59 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'ENGI3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:06:59 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'PEAB3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'UCAS3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'DMMO3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'WEGE3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'CESP3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:01 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'USIM5.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:01 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'BBDC4.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:01 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'RANI4.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:01 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'BALM4.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:02 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'CSAB3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:02 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'SPRI3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:02 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'ITUB4.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:03 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'CASN3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:03 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'CEAB3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:03 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'VULC3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:03 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'CTNM4.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:04 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'CTKA3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:04 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'CEEB5.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:04 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'EMAE4.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:04 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'POSI3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:05 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'PARD3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:05 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'UNIP5.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:06 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'VIVT3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:06 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'RANI3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:06 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'VALE3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:07 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'LWSA3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:07 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'POMO4.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:07 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'BRGE12.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:08 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'RAPT4.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:08 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'BGIP3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:08 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'BSEV3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:08 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'SLED4.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:09 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'MOAR3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:09 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'TXRX4.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:09 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'RSUL4.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:09 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'CPLE3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:09 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'LINX3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:10 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'ALUP3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:10 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'ELET3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:10 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'CEBR6.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:11 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'PDGR3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:11 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'LOGG3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:11 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'RAPT3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:11 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'LAME4.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:12 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'CRFB3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:12 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'MSPA3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:12 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'DIRR3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:13 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'BRSR3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:13 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'MGEL4.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:13 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'MTRE3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:14 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'RAIL3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:14 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'HETA4.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:14 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'TCNO4.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:14 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'BEES3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:15 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'ELET6.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:15 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'IDVL3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:15 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'BRML3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:15 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'CGAS3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:16 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'BPAC5.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:16 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'EQMA3B.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:16 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'AGRO3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:17 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'EVEN3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:17 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'GPAR3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:17 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'CMIG3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:17 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'GOAU3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:18 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'CRIV4.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:18 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'CGRA4.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:18 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'DTCY3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:19 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'INEP4.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:19 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'BRKM5.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:19 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'BAZA3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:19 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'SLED3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:20 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'MSPA4.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:20 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'GOAU4.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:20 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'CSRN6.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:21 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'TXRX3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:21 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'CYRE3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:21 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'LUPA3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:21 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'YDUQ3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:22 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'RENT3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:22 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'ALUP4.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:22 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'KLBN4.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:22 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'HAGA3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:23 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'GFSA3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:23 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'ITUB3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:23 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'CASN4.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:23 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'CIEL3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:24 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'BRFS3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:24 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'BOBR4.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:24 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'NTCO3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:24 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'NORD3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:25 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'CESP5.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:25 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'RCSL3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:25 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'BEES4.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:25 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'TGMA3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:26 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'COCE3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:26 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'RADL3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:26 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'MMXM3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:26 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'PRIO3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:27 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'PFRM3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:27 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'FRIO3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:27 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'CTSA4.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:28 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'TRPL3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:28 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'HBTS5.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:28 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'CEEB3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:29 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'CEDO3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:29 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'LAME3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:29 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'LREN3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:29 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'UGPA3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'BDLL4.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'BRKM6.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'JPSA3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:31 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'KLBN11.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:31 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'OIBR4.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:31 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'VIVR3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:31 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'OSXB3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:32 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'RPAD6.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:32 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'CSRN5.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:32 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'ELET5.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:32 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'IDVL4.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:33 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'ESTR4.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:33 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'REDE3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:33 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'SQIA3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:33 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'OIBR3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:34 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'BRPR3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:34 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'SULA4.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:34 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'RNEW4.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:35 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'EUCA3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:35 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'CSNA3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:36 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'TEKA4.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:36 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'CEED4.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:36 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'RCSL4.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:36 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'CESP6.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:37 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'RPAD5.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:37 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'HBOR3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:37 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'VLID3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:37 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'BRSR5.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:37 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'INEP3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:38 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'LOGN3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:38 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'MRVE3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:38 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'CSAN3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:39 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'SULA11.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:39 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'BTOW3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:39 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'FHER3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:40 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'FRTA3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:40 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'TCNO3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:40 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'FESA4.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:40 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'CCPR3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:41 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'MTSA3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:41 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'BRGE5.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:41 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'EZTC3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:42 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'SULA3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:42 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'BAHI3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:42 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'MTIG4.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:42 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'LCAM3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:43 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'GPIV33.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:43 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'TKNO4.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:44 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'SCAR3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:44 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'RSID3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:44 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'GNDI3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:45 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'CEBR3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:45 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'MWET3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:45 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'ITSA3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:45 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'TRPL4.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:46 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'SUZB3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:46 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'MNPR3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:46 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'MILS3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:46 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'COGN3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'BRSR6.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'VIVA3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'CEDO4.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'LIGT3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:48 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'QUAL3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:48 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'AFLT3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:48 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'JFEN3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:49 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'MNDL3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:49 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'IGTA3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:49 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'HYPE3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:49 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'TEKA3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:50 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'MTSA4.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:50 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'NEOE3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:50 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'KEPL3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:50 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'TAEE4.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:51 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'BRAP4.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:51 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'SANB11.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:51 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'JBDU3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:52 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'STBP3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:52 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'EUCA4.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:52 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'BRIV4.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:53 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'BPAC11.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:53 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'CEED3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:53 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'SEER3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:53 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'CRDE3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:54 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'CCRO3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:54 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'MAPT4.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:55 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'BPAN4.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:55 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'JOPA3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:55 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'MULT3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:55 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'ITSA4.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:56 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'SAPR4.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:56 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'BIDI4.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:56 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'PMAM3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:56 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'IRBR3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:57 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'PNVL3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:57 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'CEPE5.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:57 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'EKTR3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:57 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'CGRA3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:58 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'RDNI3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:58 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'PSSA3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:58 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'ROMI3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:58 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'BMKS3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:59 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'TEND3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:59 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'BMEB4.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:59 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'SMTO3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:07:59 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'BMIN4.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:08:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'PINE4.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:08:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'HAGA4.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:08:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'GOLL4.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:08:01 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'SGPS3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:08:01 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'TAEE3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:08:01 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'EMBR3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:08:02 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'TRIS3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:08:02 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'MWET4.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:08:02 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'BRGE3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:08:02 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'JBDU4.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:08:03 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'CNTO3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:08:03 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'BMEB3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:08:03 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'CRIV3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:08:03 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'ADHM3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:08:04 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'VVAR3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:08:04 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'BMIN3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:08:04 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'CARD3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:08:04 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'SNSY5.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:08:05 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'CEBR5.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:08:05 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'TUPY3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:08:05 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'PTBL3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:08:05 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'SOND6.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:08:06 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'BNBR3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:08:06 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'CPFE3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:08:06 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'PNVL4.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:08:06 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'EKTR4.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:08:07 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'WLMM3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:08:07 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'SAPR11.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:08:07 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'CSMG3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:08:07 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'ENGI4.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:08:08 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'PEAB4.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:08:08 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'ALPA4.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:08:08 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'NUTR3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:08:09 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'CALI4.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:08:09 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'LPSB3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:08:09 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'TCSA3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:08:09 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'BIOM3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:08:09 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'USIM6.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:08:10 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'ABCB4.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:08:10 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'BRGE8.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:08:10 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'PATI4.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:08:10 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'SAPR3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:08:11 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'BIDI3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:08:11 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'CTNM3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:08:11 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'ENBR3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:08:12 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'RLOG3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:08:12 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'TELB4.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:08:12 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'ECOR3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:08:12 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'LIPR3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:08:13 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'DOHL3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:08:13 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'RPMG3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:08:13 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'CEPE6.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:08:13 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'JBSS3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:08:14 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'CBEE3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:08:14 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'MDIA3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:08:14 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'SOND5.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:08:14 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'PATI3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:08:15 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'PPLA11.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:08:15 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'TELB3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:08:16 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'MERC3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:08:17 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'WHRL3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:08:18 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'SMLS3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:08:19 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'HGTX3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:08:19 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'CAMB3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:08:20 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'CSAB4.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:08:21 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'ABEV3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:08:22 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'GUAR3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:08:23 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'WLMM4.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:08:23 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'GRND3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:08:25 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'PCAR3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:08:25 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'JOPA4.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:08:26 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'ALUP11.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:08:27 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'BALM3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:08:27 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'CTKA4.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:08:28 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'OFSA3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:08:29 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'APER3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:08:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'BKBR3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:08:31 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'EQPA5.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:08:31 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'BMGB4.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:08:32 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'GGBR3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:08:33 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'B3SA3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:08:34 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'WSON33.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:08:35 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'UNIP3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:08:36 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'BBSE3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:08:36 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'DOHL4.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:08:37 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'MOVI3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:08:38 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'DTEX3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:08:39 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'PETR4.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:08:40 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'BBAS3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:08:41 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'GEPA4.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:08:41 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'GSHP3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:08:42 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'PTNT4.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:08:43 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'SBSP3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:08:43 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'ENMT4.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:08:44 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'CVCB3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:08:45 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'CRPG3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:08:45 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'BEEF3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:08:46 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'PETR3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:08:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'GPCP3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:08:48 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'BAUH4.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:08:48 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'EEEL4.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:08:49 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'TOTS3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:08:50 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'BRIV3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:08:51 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'MEAL3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:08:51 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'TESA3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:08:52 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'CPLE6.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:08:53 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'BRAP3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:08:54 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'SHUL4.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:08:55 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'EALT4.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:08:55 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'MRFG3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:08:56 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'TASA4.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:08:56 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'WHRL4.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:08:57 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'CAML3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:08:58 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'OMGE3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:08:59 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'BRGE6.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:09:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'MERC4.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:09:01 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'ALPA3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:09:01 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'GGBR4.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:09:02 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'CLSC4.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:09:03 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'CEGR3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:09:04 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'ODPV3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:09:05 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'ENAT3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:09:06 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'LLIS3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 20:09:06 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'PRNR3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 23:27:25 jdbc[3]: exception
+java.sql.SQLClientInfoException: Client info name 'ApplicationName' not supported.
+	at org.h2.jdbc.JdbcConnection.setClientInfo(JdbcConnection.java:1749)
+	at com.intellij.database.remote.jdbc.impl.RemoteConnectionImpl.setClientInfo(RemoteConnectionImpl.java:466)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:359)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:562)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:796)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:677)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:676)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-12-08 23:27:29 jdbc[3]: exception
+java.sql.SQLClientInfoException: Client info name 'ApplicationName' not supported.
+	at org.h2.jdbc.JdbcConnection.setClientInfo(JdbcConnection.java:1749)
+	at com.intellij.database.remote.jdbc.impl.RemoteConnectionImpl.setClientInfo(RemoteConnectionImpl.java:466)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:359)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:562)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:796)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:677)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:676)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-12-08 21:04:20 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'FRAS3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 21:04:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'BTTL3.SA' (TICKER_HISTORY: ""ID_TICKER"" BIGINT NOT NULL)"; SQL statement:
+insert into ticker_history (id, close, data, high, id_ticker, low, open, volume) values (null, ?, ?, ?, ?, ?, ?, ?) [22018-200]
+2020-12-08 21:05:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:622)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.message.DbException.get(DbException.java:170)
+	at org.h2.jdbc.JdbcConnection.checkClosed(JdbcConnection.java:1514)
+	at org.h2.jdbc.JdbcConnection.checkClosed(JdbcConnection.java:1490)
+	at org.h2.jdbc.JdbcConnection.getAutoCommit(JdbcConnection.java:516)
+	at com.zaxxer.hikari.pool.HikariProxyConnection.getAutoCommit(HikariProxyConnection.java)
+	at org.hibernate.resource.jdbc.internal.AbstractLogicalConnectionImplementor.determineInitialAutoCommitMode(AbstractLogicalConnectionImplementor.java:135)
+	at org.hibernate.resource.jdbc.internal.LogicalConnectionManagedImpl.begin(LogicalConnectionManagedImpl.java:280)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl.begin(JdbcResourceLocalTransactionCoordinatorImpl.java:246)
+	at org.hibernate.engine.transaction.internal.TransactionImpl.begin(TransactionImpl.java:83)
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.beginTransaction(HibernateJpaDialect.java:184)
+	at org.springframework.orm.jpa.JpaTransactionManager.doBegin(JpaTransactionManager.java:402)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.startTransaction(AbstractPlatformTransactionManager.java:400)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.getTransaction(AbstractPlatformTransactionManager.java:373)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.createTransactionIfNecessary(TransactionAspectSupport.java:574)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:361)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:118)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:178)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:95)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212)
+	at com.sun.proxy.$Proxy146.save(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:205)
+	at com.sun.proxy.$Proxy112.save(Unknown Source)
+	at br.com.jeffersonbraga.tickers.api.TickerManagerApi.tickerManager(TickerManagerApi.kt:85)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+2020-12-08 21:05:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:622)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.message.DbException.get(DbException.java:170)
+	at org.h2.jdbc.JdbcConnection.checkClosed(JdbcConnection.java:1514)
+	at org.h2.jdbc.JdbcConnection.checkClosed(JdbcConnection.java:1490)
+	at org.h2.jdbc.JdbcConnection.setAutoCommit(JdbcConnection.java:495)
+	at com.zaxxer.hikari.pool.ProxyConnection.setAutoCommit(ProxyConnection.java:414)
+	at com.zaxxer.hikari.pool.HikariProxyConnection.setAutoCommit(HikariProxyConnection.java)
+	at org.hibernate.resource.jdbc.internal.AbstractLogicalConnectionImplementor.begin(AbstractLogicalConnectionImplementor.java:72)
+	at org.hibernate.resource.jdbc.internal.LogicalConnectionManagedImpl.begin(LogicalConnectionManagedImpl.java:282)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl.begin(JdbcResourceLocalTransactionCoordinatorImpl.java:246)
+	at org.hibernate.engine.transaction.internal.TransactionImpl.begin(TransactionImpl.java:83)
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.beginTransaction(HibernateJpaDialect.java:184)
+	at org.springframework.orm.jpa.JpaTransactionManager.doBegin(JpaTransactionManager.java:402)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.startTransaction(AbstractPlatformTransactionManager.java:400)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.getTransaction(AbstractPlatformTransactionManager.java:373)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.createTransactionIfNecessary(TransactionAspectSupport.java:574)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:361)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:118)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:178)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:95)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212)
+	at com.sun.proxy.$Proxy146.save(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:205)
+	at com.sun.proxy.$Proxy112.save(Unknown Source)
+	at br.com.jeffersonbraga.tickers.api.TickerManagerApi.tickerManager(TickerManagerApi.kt:85)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+2020-12-08 21:05:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:622)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.message.DbException.get(DbException.java:170)
+	at org.h2.jdbc.JdbcConnection.checkClosed(JdbcConnection.java:1514)
+	at org.h2.jdbc.JdbcConnection.checkClosed(JdbcConnection.java:1490)
+	at org.h2.jdbc.JdbcConnection.getWarnings(JdbcConnection.java:689)
+	at com.zaxxer.hikari.pool.HikariProxyConnection.getWarnings(HikariProxyConnection.java)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.handleAndClearWarnings(SqlExceptionHelper.java:290)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logAndClearWarnings(SqlExceptionHelper.java:269)
+	at org.hibernate.resource.jdbc.internal.LogicalConnectionManagedImpl.releaseConnection(LogicalConnectionManagedImpl.java:208)
+	at org.hibernate.resource.jdbc.internal.LogicalConnectionManagedImpl.close(LogicalConnectionManagedImpl.java:258)
+	at org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl.close(JdbcCoordinatorImpl.java:175)
+	at org.hibernate.internal.AbstractSharedSessionContract.close(AbstractSharedSessionContract.java:342)
+	at org.hibernate.internal.SessionImpl.closeWithoutOpenChecks(SessionImpl.java:376)
+	at org.hibernate.internal.SessionImpl.close(SessionImpl.java:361)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.springframework.orm.jpa.ExtendedEntityManagerCreator$ExtendedEntityManagerInvocationHandler.invoke(ExtendedEntityManagerCreator.java:366)
+	at com.sun.proxy.$Proxy142.close(Unknown Source)
+	at org.springframework.orm.jpa.EntityManagerFactoryUtils.closeEntityManager(EntityManagerFactoryUtils.java:427)
+	at org.springframework.orm.jpa.support.OpenEntityManagerInViewInterceptor.afterCompletion(OpenEntityManagerInViewInterceptor.java:112)
+	at org.springframework.web.servlet.handler.WebRequestHandlerInterceptorAdapter.afterCompletion(WebRequestHandlerInterceptorAdapter.java:73)
+	at org.springframework.web.servlet.HandlerExecutionChain.triggerAfterCompletion(HandlerExecutionChain.java:189)
+	at org.springframework.web.servlet.DispatcherServlet.triggerAfterCompletion(DispatcherServlet.java:1427)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1060)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+2020-12-08 21:05:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:622)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.message.DbException.get(DbException.java:170)
+	at org.h2.jdbc.JdbcConnection.checkClosed(JdbcConnection.java:1514)
+	at org.h2.jdbc.JdbcConnection.checkClosed(JdbcConnection.java:1490)
+	at org.h2.jdbc.JdbcConnection.clearWarnings(JdbcConnection.java:703)
+	at com.zaxxer.hikari.pool.HikariProxyConnection.clearWarnings(HikariProxyConnection.java)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.handleAndClearWarnings(SqlExceptionHelper.java:299)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logAndClearWarnings(SqlExceptionHelper.java:269)
+	at org.hibernate.resource.jdbc.internal.LogicalConnectionManagedImpl.releaseConnection(LogicalConnectionManagedImpl.java:208)
+	at org.hibernate.resource.jdbc.internal.LogicalConnectionManagedImpl.close(LogicalConnectionManagedImpl.java:258)
+	at org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl.close(JdbcCoordinatorImpl.java:175)
+	at org.hibernate.internal.AbstractSharedSessionContract.close(AbstractSharedSessionContract.java:342)
+	at org.hibernate.internal.SessionImpl.closeWithoutOpenChecks(SessionImpl.java:376)
+	at org.hibernate.internal.SessionImpl.close(SessionImpl.java:361)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.springframework.orm.jpa.ExtendedEntityManagerCreator$ExtendedEntityManagerInvocationHandler.invoke(ExtendedEntityManagerCreator.java:366)
+	at com.sun.proxy.$Proxy142.close(Unknown Source)
+	at org.springframework.orm.jpa.EntityManagerFactoryUtils.closeEntityManager(EntityManagerFactoryUtils.java:427)
+	at org.springframework.orm.jpa.support.OpenEntityManagerInViewInterceptor.afterCompletion(OpenEntityManagerInViewInterceptor.java:112)
+	at org.springframework.web.servlet.handler.WebRequestHandlerInterceptorAdapter.afterCompletion(WebRequestHandlerInterceptorAdapter.java:73)
+	at org.springframework.web.servlet.HandlerExecutionChain.triggerAfterCompletion(HandlerExecutionChain.java:189)
+	at org.springframework.web.servlet.DispatcherServlet.triggerAfterCompletion(DispatcherServlet.java:1427)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1060)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+2020-12-08 21:05:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:622)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.message.DbException.get(DbException.java:170)
+	at org.h2.jdbc.JdbcConnection.checkClosed(JdbcConnection.java:1514)
+	at org.h2.jdbc.JdbcConnection.checkClosed(JdbcConnection.java:1490)
+	at org.h2.jdbc.JdbcConnection.clearWarnings(JdbcConnection.java:703)
+	at com.zaxxer.hikari.pool.ProxyConnection.close(ProxyConnection.java:267)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.closeConnection(DatasourceConnectionProviderImpl.java:127)
+	at org.hibernate.internal.NonContextualJdbcConnectionAccess.releaseConnection(NonContextualJdbcConnectionAccess.java:49)
+	at org.hibernate.resource.jdbc.internal.LogicalConnectionManagedImpl.releaseConnection(LogicalConnectionManagedImpl.java:210)
+	at org.hibernate.resource.jdbc.internal.LogicalConnectionManagedImpl.close(LogicalConnectionManagedImpl.java:258)
+	at org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl.close(JdbcCoordinatorImpl.java:175)
+	at org.hibernate.internal.AbstractSharedSessionContract.close(AbstractSharedSessionContract.java:342)
+	at org.hibernate.internal.SessionImpl.closeWithoutOpenChecks(SessionImpl.java:376)
+	at org.hibernate.internal.SessionImpl.close(SessionImpl.java:361)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.springframework.orm.jpa.ExtendedEntityManagerCreator$ExtendedEntityManagerInvocationHandler.invoke(ExtendedEntityManagerCreator.java:366)
+	at com.sun.proxy.$Proxy142.close(Unknown Source)
+	at org.springframework.orm.jpa.EntityManagerFactoryUtils.closeEntityManager(EntityManagerFactoryUtils.java:427)
+	at org.springframework.orm.jpa.support.OpenEntityManagerInViewInterceptor.afterCompletion(OpenEntityManagerInViewInterceptor.java:112)
+	at org.springframework.web.servlet.handler.WebRequestHandlerInterceptorAdapter.afterCompletion(WebRequestHandlerInterceptorAdapter.java:73)
+	at org.springframework.web.servlet.HandlerExecutionChain.triggerAfterCompletion(HandlerExecutionChain.java:189)
+	at org.springframework.web.servlet.DispatcherServlet.triggerAfterCompletion(DispatcherServlet.java:1427)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1060)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+2020-12-09 00:05:56 jdbc[3]: exception
+java.sql.SQLClientInfoException: Client info name 'ApplicationName' not supported.
+	at org.h2.jdbc.JdbcConnection.setClientInfo(JdbcConnection.java:1749)
+	at com.intellij.database.remote.jdbc.impl.RemoteConnectionImpl.setClientInfo(RemoteConnectionImpl.java:466)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:359)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:562)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:796)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:677)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:676)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-12-09 00:06:21 jdbc[4]: exception
+java.sql.SQLClientInfoException: Client info name 'ApplicationName' not supported.
+	at org.h2.jdbc.JdbcConnection.setClientInfo(JdbcConnection.java:1749)
+	at com.intellij.database.remote.jdbc.impl.RemoteConnectionImpl.setClientInfo(RemoteConnectionImpl.java:466)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:359)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:562)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:796)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:677)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:676)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-12-09 00:06:22 jdbc[5]: exception
+java.sql.SQLClientInfoException: Client info name 'ApplicationName' not supported.
+	at org.h2.jdbc.JdbcConnection.setClientInfo(JdbcConnection.java:1749)
+	at com.intellij.database.remote.jdbc.impl.RemoteConnectionImpl.setClientInfo(RemoteConnectionImpl.java:466)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:359)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:562)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:796)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:677)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:676)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-12-09 00:06:26 jdbc[6]: exception
+java.sql.SQLClientInfoException: Client info name 'ApplicationName' not supported.
+	at org.h2.jdbc.JdbcConnection.setClientInfo(JdbcConnection.java:1749)
+	at com.intellij.database.remote.jdbc.impl.RemoteConnectionImpl.setClientInfo(RemoteConnectionImpl.java:466)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:359)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:562)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:796)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:677)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:676)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-12-09 00:06:30 jdbc[7]: exception
+java.sql.SQLClientInfoException: Client info name 'ApplicationName' not supported.
+	at org.h2.jdbc.JdbcConnection.setClientInfo(JdbcConnection.java:1749)
+	at com.intellij.database.remote.jdbc.impl.RemoteConnectionImpl.setClientInfo(RemoteConnectionImpl.java:466)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:359)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:562)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:796)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:677)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:676)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-12-08 21:07:14 database: flush
+org.h2.message.DbException: General error: "java.lang.IllegalStateException: The file is locked: nio:/home/jefferson/IdeaProjects/microservices-jeff/data/tickers.mv.db [1.4.200/7]" [50000-200]
+	at org.h2.message.DbException.get(DbException.java:194)
+	at org.h2.message.DbException.convert(DbException.java:347)
+	at org.h2.mvstore.db.MVTableEngine$1.uncaughtException(MVTableEngine.java:93)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:2877)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:481)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:402)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:3579)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:170)
+	at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:103)
+	at org.h2.engine.Database.getPageStore(Database.java:2659)
+	at org.h2.engine.Database.open(Database.java:675)
+	at org.h2.engine.Database.openDatabase(Database.java:307)
+	at org.h2.engine.Database.<init>(Database.java:301)
+	at org.h2.engine.Engine.openSession(Engine.java:74)
+	at org.h2.engine.Engine.openSession(Engine.java:192)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:171)
+	at org.h2.engine.Engine.createSession(Engine.java:166)
+	at org.h2.engine.Engine.createSession(Engine.java:29)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:340)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:173)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:152)
+	at org.h2.Driver.connect(Driver.java:69)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:358)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:477)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:560)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration.lambda$h2Console$0(H2ConsoleAutoConfiguration.java:72)
+	at org.springframework.beans.factory.ObjectProvider.ifAvailable(ObjectProvider.java:93)
+	at org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration.h2Console(H2ConsoleAutoConfiguration.java:71)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:650)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:635)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1336)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1176)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:556)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.getOrderedBeansOfType(ServletContextInitializerBeans.java:211)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.getOrderedBeansOfType(ServletContextInitializerBeans.java:202)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addServletContextInitializerBeans(ServletContextInitializerBeans.java:96)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.<init>(ServletContextInitializerBeans.java:85)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.getServletContextInitializerBeans(ServletWebServerApplicationContext.java:255)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.selfInitialize(ServletWebServerApplicationContext.java:229)
+	at org.springframework.boot.web.embedded.tomcat.TomcatStarter.onStartup(TomcatStarter.java:53)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5166)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1384)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1374)
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:264)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:140)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:909)
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:843)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1384)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1374)
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:264)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:140)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:909)
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:262)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:421)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:930)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.startup.Tomcat.start(Tomcat.java:486)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:123)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.<init>(TomcatWebServer.java:104)
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getTomcatWebServer(TomcatServletWebServerFactory.java:440)
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getWebServer(TomcatServletWebServerFactory.java:193)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:178)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:158)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:545)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:405)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at br.com.jeffersonbraga.tickers.TickersApplication.main(TickersApplication.java:12)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: General error: "java.lang.IllegalStateException: The file is locked: nio:/home/jefferson/IdeaProjects/microservices-jeff/data/tickers.mv.db [1.4.200/7]" [50000-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:505)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	... 94 more
+Caused by: java.lang.IllegalStateException: The file is locked: nio:/home/jefferson/IdeaProjects/microservices-jeff/data/tickers.mv.db [1.4.200/7]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:950)
+	at org.h2.mvstore.FileStore.open(FileStore.java:172)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:381)
+	... 88 more
+2020-12-08 21:07:15 database: flush
+org.h2.message.DbException: General error: "java.lang.IllegalStateException: The file is locked: nio:/home/jefferson/IdeaProjects/microservices-jeff/data/tickers.mv.db [1.4.200/7]" [50000-200]
+	at org.h2.message.DbException.get(DbException.java:194)
+	at org.h2.message.DbException.convert(DbException.java:347)
+	at org.h2.mvstore.db.MVTableEngine$1.uncaughtException(MVTableEngine.java:93)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:2877)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:481)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:402)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:3579)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:170)
+	at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:103)
+	at org.h2.engine.Database.getPageStore(Database.java:2659)
+	at org.h2.engine.Database.open(Database.java:675)
+	at org.h2.engine.Database.openDatabase(Database.java:307)
+	at org.h2.engine.Database.<init>(Database.java:301)
+	at org.h2.engine.Engine.openSession(Engine.java:74)
+	at org.h2.engine.Engine.openSession(Engine.java:192)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:171)
+	at org.h2.engine.Engine.createSession(Engine.java:166)
+	at org.h2.engine.Engine.createSession(Engine.java:29)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:340)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:173)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:152)
+	at org.h2.Driver.connect(Driver.java:69)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:358)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:477)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:560)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.flywaydb.core.internal.jdbc.JdbcUtils.openConnection(JdbcUtils.java:56)
+	at org.flywaydb.core.internal.jdbc.JdbcConnectionFactory.<init>(JdbcConnectionFactory.java:80)
+	at org.flywaydb.core.Flyway.execute(Flyway.java:456)
+	at org.flywaydb.core.Flyway.migrate(Flyway.java:159)
+	at org.springframework.boot.autoconfigure.flyway.FlywayMigrationInitializer.afterPropertiesSet(FlywayMigrationInitializer.java:65)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1853)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1790)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:311)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1109)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:869)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:405)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at br.com.jeffersonbraga.tickers.TickersApplication.main(TickersApplication.java:12)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: General error: "java.lang.IllegalStateException: The file is locked: nio:/home/jefferson/IdeaProjects/microservices-jeff/data/tickers.mv.db [1.4.200/7]" [50000-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:505)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	... 55 more
+Caused by: java.lang.IllegalStateException: The file is locked: nio:/home/jefferson/IdeaProjects/microservices-jeff/data/tickers.mv.db [1.4.200/7]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:950)
+	at org.h2.mvstore.FileStore.open(FileStore.java:172)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:381)
+	... 49 more
+2020-12-09 00:09:28 jdbc[8]: exception
+java.sql.SQLClientInfoException: Client info name 'ApplicationName' not supported.
+	at org.h2.jdbc.JdbcConnection.setClientInfo(JdbcConnection.java:1749)
+	at com.intellij.database.remote.jdbc.impl.RemoteConnectionImpl.setClientInfo(RemoteConnectionImpl.java:466)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:359)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:562)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:796)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:677)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:676)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
