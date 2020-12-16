@@ -53,16 +53,8 @@ class TickerCardApi {
             }
             */
 
-
-            var precoMedio = 0.0
             var quantidade = 0.0
             var valorTotalInvestido = 0.0
-
-            var valorAtual = 0.0
-            var diferencaPreco = 0.0
-            var percentualDiferenca = 0.0
-            var valorTotalAtual = 0.0
-
             var qtdCompras = 0.0
 
             var isTickerComprado = false
@@ -72,7 +64,6 @@ class TickerCardApi {
             }?.forEach {
                 itCompraTicker ->
                 quantidade += itCompraTicker.quantidade!!
-                precoMedio += itCompraTicker.valor!!.div(itCompraTicker.quantidade!!)
                 valorTotalInvestido += itCompraTicker.valor!!
                 qtdCompras = qtdCompras.plus(1.0)
 
@@ -80,11 +71,7 @@ class TickerCardApi {
                 isTickerComprado = true
             }
 
-            tickerCard.precoMedio = if (qtdCompras > 0.0) {
-                precoMedio.div(qtdCompras)
-            } else {
-                precoMedio
-            }
+            tickerCard.precoMedio = valorTotalInvestido.div(quantidade)
 
             tickerCard.quantidade = quantidade
             tickerCard.valorTotalInvestido = valorTotalInvestido
