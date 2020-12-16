@@ -57,7 +57,7 @@
           </base-input>
         </div>
       </div>
-      <div class="col-lg-12">
+      <!--<div class="col-lg-12">
         <card type="chart">
           <template slot="header">
             <h1 class="card-category">Valor Fechamento Mensal</h1>
@@ -72,10 +72,15 @@
             </line-chart>
           </div>
         </card>
+      </div>-->
+      <div>
+        <GChart
+          type="ColumnChart"
+          :data="chartData"
+          :options="chartOptions"/>
       </div>
       <base-button slot="footer" type="primary" fill>Save</base-button>
     </card>
-
   </div>
 </template>
 <script>
@@ -84,16 +89,50 @@ import config from "@/config";
 import {basicOptions} from "@/components/Charts/config";
 import LineChart from '@/components/Charts/LineChart';
 import * as chartConfigs from '@/components/Charts/config';
+import { GChart } from 'vue-google-charts';
 
 export default {
   components: {
-    LineChart
+    LineChart,
+    GChart
   },
   mounted() {
     //this.purpleLineChart.chartData.datasets[0].data = [20, 100, 70, 80, 120, 80];
+/*
+    let data = google.visualization.arrayToDataTable([
+      ['Year', 'Sales', 'Expenses'],
+      ['2004',  1000,      400],
+      ['2005',  1170,      460],
+      ['2006',  660,       1120],
+      ['2007',  1030,      540]
+    ]);
+
+    let options = {
+      title: 'Company Performance',
+      curveType: 'function',
+      legend: { position: 'bottom' }
+    };
+
+    let chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+
+    chart.draw(data, options);*/
   },
   data() {
     return {
+      // Array will be automatically processed with visualization.arrayToDataTable function
+      chartData: [
+        ['Year', 'Sales', 'Expenses', 'Profit'],
+        ['2014', 1000, 400, 200],
+        ['2015', 1170, 460, 250],
+        ['2016', 660, 1120, 300],
+        ['2017', 1030, 540, 350]
+      ],
+      chartOptions: {
+        chart: {
+          title: 'Company Performance',
+          subtitle: 'Sales, Expenses, and Profit: 2014-2017',
+        }
+      },
       dataChart : [],
       purpleLineChart: {
         extraOptions: chartConfigs.purpleChartOptions,

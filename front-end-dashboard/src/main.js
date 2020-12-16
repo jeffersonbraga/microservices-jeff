@@ -22,11 +22,13 @@ import BlackDashboard from "./plugins/blackDashboard";
 import i18n from "./i18n"
 import VueResource from 'vue-resource';
 import './registerServiceWorker'
+import VueGoogleCharts from 'vue-google-charts'
 
 Vue.use(VueResource);
 Vue.use(BlackDashboard);
 Vue.use(VueRouter);
 Vue.use(RouterPrefetch);
+Vue.use(VueGoogleCharts)
 
 /* eslint-disable no-new */
 new Vue({
