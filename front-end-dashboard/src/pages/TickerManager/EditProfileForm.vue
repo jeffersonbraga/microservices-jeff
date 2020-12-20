@@ -57,7 +57,7 @@
           </base-input>
         </div>
       </div>
-      <div class="col-lg-12">
+      <!--<div class="col-lg-12">
         <card type="chart">
           <template slot="header">
             <h1 class="card-category">Histórico Valor Fechamento <b>{{item.ticker}}</b></h1>
@@ -72,7 +72,7 @@
             </line-chart>
           </div>
         </card>
-      </div>
+      </div>-->
       <div class="col-lg-12">
         <card type="chart">
           <template slot="header">
@@ -80,7 +80,7 @@
           </template>
           <div class="chart-area">
             <GChart
-              type="AreaChart"
+              type="LineChart"
               :data="item.googleChartData"
               :options="chartOptions"/>
           </div>
@@ -93,107 +93,42 @@
 <script>
 
 import config from "@/config";
-import {basicOptions} from "@/components/Charts/config";
-import LineChart from '@/components/Charts/LineChart';
-import * as chartConfigs from '@/components/Charts/config';
 import { GChart } from 'vue-google-charts';
 
 export default {
   components: {
-    LineChart,
     GChart
-  },
-  methods: {
-
-    getChartMaxMin(item) {
-      if (item != undefined) {
-        chartConfigs.purpleChartOptions.scales.yAxes[0].ticks.suggestedMax = item.precoMedio + 1;
-        chartConfigs.purpleChartOptions.scales.yAxes[0].ticks.suggestedMin = item.precoMedio - 1;
-      }
-      return chartConfigs.purpleChartOptions;
-    }
-  },
-  mounted() {
-    //this.purpleLineChart.chartData.datasets[0].data = [20, 100, 70, 80, 120, 80];
-/*
-    let data = google.visualization.arrayToDataTable([
-      ['Year', 'Sales', 'Expenses'],
-      ['2004',  1000,      400],
-      ['2005',  1170,      460],
-      ['2006',  660,       1120],
-      ['2007',  1030,      540]
-    ]);
-
-    let options = {
-      title: 'Company Performance',
-      curveType: 'function',
-      legend: { position: 'bottom' }
-    };
-
-    let chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
-
-    chart.draw(data, options);*/
-/*
-    this.chartOptions['legend']['textStyle'] = {color:'#607d8b'};
-    this.chartOptions['hAxis']['textStyle'] = { color: '#78909c', fontName: 'Roboto', fontSize: '12', bold: true};
-    this.chartOptions['vAxis']['gridlines'] = {color:'#cfd8dc'};
-    this.chartOptions['datalessRegionColor'] = {color:'#f00'};
-    this.chartOptions['pieSliceBorderColor'] = {color:'#eceff1'};*/
   },
   data() {
     return {
-      // Array will be automatically processed with visualization.arrayToDataTable function
-      chartData: [
-        ['Mes', 'Inicio', 'Expenses', 'Profit'],
-        ['2014', 1000, 400, 200],
-        ['2015', 1170, 460, 250],
-        ['2016', 660, 1120, 300],
-        ['2017', 1030, 540, 350]
-      ],
       chartOptions: {
         hAxis: {
           titleTextStyle: {color: '#607d8b'},
-          gridlines: { count:0},
-          textStyle: { color: '#b0bec5', fontName: 'Roboto', fontSize: '12', bold: true}
+          gridlines: {color:'#37474f'},
+          textStyle: { color: '#b0bec5', fontName: 'Roboto', fontSize: '12', bold: true},
+          scaleType: 'log'
         },
         vAxis: {
-          minValue: 0,
           gridlines: {color:'#37474f', count:0},
-          baselineColor: 'transparent'
+          baselineColor: 'transparent',
+          textStyle: { color: '#b0bec5', fontName: 'Roboto', fontSize: '12', bold: true}
         },
-        trendlines: {
-          0: {type: 'exponential', color: '#fff', opacity: 1},
-          1: {type: 'linear', color: '#f00', opacity: 1}
-        },
-        curveType: 'function',
-        legend: {position: 'bottom', alignment: 'center', textStyle: {color:'#607d8b', fontName: 'Roboto', fontSize: '12'} },
-        colors: ["#0fc174","#2196f3","#03a9f4","#00bcd4","#009688","#4caf50","#8bc34a","#cddc39"],
-        areaOpacity: 0.14,
-        lineWidth: 2,
+        legend: {position: 'top', alignment: 'center', textStyle: {color:'#607d8b', fontName: 'Roboto', fontSize: '12'} },
+        colors: ["#0fc174","#00bcd4","#ff0000","#00bcd4","#009688","#4caf50","#8bc34a","#cddc39"],
         backgroundColor: 'transparent',
+        curveType: 'function',
+        lineWidth: 1,
+        height: 500,
         chartArea: {
           backgroundColor: "transparent",
-          width: '100%',
-          height: '80%'
+          width: '90%',
+          height: '85%'
         },
-        pieSliceBorderColor: '#263238',
-        pieSliceTextStyle:  {color:'#607d8b' },
-        pieHole: 0.9,
-        bar: {groupWidth: "40" },
-        colorAxis: {colors: ["#3f51b5","#2196f3","#03a9f4","#00bcd4"] },
-        datalessRegionColor: '#37474f',
-        displayMode: 'regions',
-        chart: {
-          title: 'Company Performance',
-          subtitle: 'Sales, Expenses, and Profit: 2014-2017'
+        series: {
+          2: { pointShape: 'square' , pointSize: 5 }
         }
       },
-      dataChart : [],
-      purpleLineChart: {
-        extraOptions: this.getChartMaxMin(this.lista[0]),
-        gradientColors: config.colors.primaryGradient,
-        gradientStops: [1, 0.2, 0],
-      }
+      dataChart : []
     }
   },
   props: {
@@ -209,49 +144,6 @@ export default {
         return [];
       }
     }
-  }
-};
-
-export let purpleChartOptions = {
-  ...basicOptions,
-  tooltips: {
-    backgroundColor: '#f5f5f5',
-    titleFontColor: '#333',
-    bodyFontColor: '#666',
-    bodySpacing: 4,
-    xPadding: 12,
-    mode: "nearest",
-    intersect: 0,
-    position: "nearest"
-  },
-  scales: {
-    yAxes: [{
-      barPercentage: 1.6,
-      gridLines: {
-        drawBorder: false,
-        color: 'rgba(29,140,248,0.0)',
-        zeroLineColor: "transparent",
-      },
-      ticks: {
-        suggestedMin: 60,
-        suggestedMax: 125,
-        padding: 20,
-        fontColor: "#9a9a9a"
-      }
-    }],
-
-    xAxes: [{
-      barPercentage: 1.6,
-      gridLines: {
-        drawBorder: false,
-        color: 'rgba(225,78,202,0.1)',
-        zeroLineColor: "transparent",
-      },
-      ticks: {
-        padding: 20,
-        fontColor: "#9a9a9a"
-      }
-    }]
   }
 };
 </script>
