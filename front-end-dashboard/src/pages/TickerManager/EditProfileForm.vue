@@ -57,10 +57,10 @@
           </base-input>
         </div>
       </div>
-      <!--<div class="col-lg-12">
+      <div class="col-lg-12">
         <card type="chart">
           <template slot="header">
-            <h1 class="card-category">Valor Fechamento Mensal</h1>
+            <h1 class="card-category">Histórico Valor Fechamento <b>{{item.ticker}}</b></h1>
           </template>
           <div class="chart-area">
             <line-chart style="height: 100%"
@@ -72,12 +72,19 @@
             </line-chart>
           </div>
         </card>
-      </div>-->
-      <div>
-        <GChart
-          type="ColumnChart"
-          :data="chartData"
-          :options="chartOptions"/>
+      </div>
+      <div class="col-lg-12">
+        <card type="chart">
+          <template slot="header">
+            <h1 class="card-category">Histórico Valor Fechamento <b>{{item.ticker}}</b></h1>
+          </template>
+          <div class="chart-area">
+            <GChart
+              type="AreaChart"
+              :data="item.googleChartData"
+              :options="chartOptions"/>
+          </div>
+        </card>
       </div>
       <base-button slot="footer" type="primary" fill>Save</base-button>
     </card>
@@ -95,6 +102,16 @@ export default {
   components: {
     LineChart,
     GChart
+  },
+  methods: {
+
+    getChartMaxMin(item) {
+      if (item != undefined) {
+        chartConfigs.purpleChartOptions.scales.yAxes[0].ticks.suggestedMax = item.precoMedio + 1;
+        chartConfigs.purpleChartOptions.scales.yAxes[0].ticks.suggestedMin = item.precoMedio - 1;
+      }
+      return chartConfigs.purpleChartOptions;
+    }
   },
   mounted() {
     //this.purpleLineChart.chartData.datasets[0].data = [20, 100, 70, 80, 120, 80];
@@ -116,26 +133,64 @@ export default {
     let chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
 
     chart.draw(data, options);*/
+/*
+    this.chartOptions['legend']['textStyle'] = {color:'#607d8b'};
+    this.chartOptions['hAxis']['textStyle'] = { color: '#78909c', fontName: 'Roboto', fontSize: '12', bold: true};
+    this.chartOptions['vAxis']['gridlines'] = {color:'#cfd8dc'};
+    this.chartOptions['datalessRegionColor'] = {color:'#f00'};
+    this.chartOptions['pieSliceBorderColor'] = {color:'#eceff1'};*/
   },
   data() {
     return {
       // Array will be automatically processed with visualization.arrayToDataTable function
       chartData: [
-        ['Year', 'Sales', 'Expenses', 'Profit'],
+        ['Mes', 'Inicio', 'Expenses', 'Profit'],
         ['2014', 1000, 400, 200],
         ['2015', 1170, 460, 250],
         ['2016', 660, 1120, 300],
         ['2017', 1030, 540, 350]
       ],
       chartOptions: {
+        hAxis: {
+          titleTextStyle: {color: '#607d8b'},
+          gridlines: { count:0},
+          textStyle: { color: '#b0bec5', fontName: 'Roboto', fontSize: '12', bold: true}
+        },
+        vAxis: {
+          minValue: 0,
+          gridlines: {color:'#37474f', count:0},
+          baselineColor: 'transparent'
+        },
+        trendlines: {
+          0: {type: 'exponential', color: '#fff', opacity: 1},
+          1: {type: 'linear', color: '#f00', opacity: 1}
+        },
+        curveType: 'function',
+        legend: {position: 'bottom', alignment: 'center', textStyle: {color:'#607d8b', fontName: 'Roboto', fontSize: '12'} },
+        colors: ["#0fc174","#2196f3","#03a9f4","#00bcd4","#009688","#4caf50","#8bc34a","#cddc39"],
+        areaOpacity: 0.14,
+        lineWidth: 2,
+        backgroundColor: 'transparent',
+        chartArea: {
+          backgroundColor: "transparent",
+          width: '100%',
+          height: '80%'
+        },
+        pieSliceBorderColor: '#263238',
+        pieSliceTextStyle:  {color:'#607d8b' },
+        pieHole: 0.9,
+        bar: {groupWidth: "40" },
+        colorAxis: {colors: ["#3f51b5","#2196f3","#03a9f4","#00bcd4"] },
+        datalessRegionColor: '#37474f',
+        displayMode: 'regions',
         chart: {
           title: 'Company Performance',
-          subtitle: 'Sales, Expenses, and Profit: 2014-2017',
+          subtitle: 'Sales, Expenses, and Profit: 2014-2017'
         }
       },
       dataChart : [],
       purpleLineChart: {
-        extraOptions: chartConfigs.purpleChartOptions,
+        extraOptions: this.getChartMaxMin(this.lista[0]),
         gradientColors: config.colors.primaryGradient,
         gradientStops: [1, 0.2, 0],
       }

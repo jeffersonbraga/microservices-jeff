@@ -1,5 +1,6 @@
 package br.com.jeffersonbraga.tickers.model.card
 
+import br.com.jeffersonbraga.tickers.model.buyticker.BuyTicker
 import br.com.jeffersonbraga.tickers.model.history.TickerHistory
 import java.util.*
 
@@ -14,4 +15,5 @@ class TickerCard {
     var valorTotalInvestido: Double? = null
     var valorTotalAtual: Double? = null
     var listaDadosHistorico : List<TickerHistory>? = null
+    var listaDadosCompras : MutableList<BuyTicker> = mutableListOf<BuyTicker>()
 }

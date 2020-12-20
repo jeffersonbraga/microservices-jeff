@@ -1,5 +1,6 @@
 package br.com.jeffersonbraga.tickers.api
 
+import br.com.jeffersonbraga.tickers.model.buyticker.BuyTicker
 import br.com.jeffersonbraga.tickers.model.card.TickerCard
 import br.com.jeffersonbraga.tickers.model.history.TickerHistory
 import br.com.jeffersonbraga.tickers.repository.BuyTickerRepository
@@ -66,8 +67,9 @@ class TickerCardApi {
                 quantidade += itCompraTicker.quantidade!!
                 valorTotalInvestido += itCompraTicker.valor!!
                 qtdCompras = qtdCompras.plus(1.0)
-
+                tickerCard.listaDadosCompras.add(itCompraTicker)
                 tickerCard.listaDadosHistorico = listaHistory.filter { itHistory -> itHistory.idTicker == itTicker.ticker }
+
                 isTickerComprado = true
             }
 
@@ -85,6 +87,7 @@ class TickerCardApi {
             tickerCard.data = Date()
             if (isTickerComprado) {
                 tickerCard.percentualDiferenca = (tickerCard.valorAtual!!.div(tickerCard.precoMedio!!) * 100.0) - 100.0
+                tickerCard.listaDadosHistorico?.sortedBy { it.data }
                 listaCards.add(tickerCard)
             }
         }
@@ -93,7 +96,7 @@ class TickerCardApi {
             val tickerHistoryFilter = TickerHistory()
             tickerHistoryFilter.idTicker = itemTicker.ticker
         }*/
-
+        listaCards.sortBy { it.ticker }
         return listaCards
     }
 }

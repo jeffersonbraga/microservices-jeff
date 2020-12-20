@@ -46,7 +46,7 @@
     props: {
       title: {
         type: String,
-        default: "Creative Tim"
+        default: "Tickers APP"
       },
       backgroundColor: {
         type: String,

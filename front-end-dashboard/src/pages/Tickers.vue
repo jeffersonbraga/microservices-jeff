@@ -28,11 +28,19 @@
         listaAux.forEach((value, index) => {
 
           let labels = [];
+          let dataChartGoogle = [];
           let data = [];
+          dataChartGoogle.push(["Mes", "close", "medio"]);
           value.listaDadosHistorico.forEach((valueHistorico, indexHistorico) => {
             //console.log(moment(String(valueHistorico.data)).format('MM/DD/YYYY hh:mm'));
-            labels.push(new Date(valueHistorico.data).toLocaleString('default', { month: 'short' }).toString().toUpperCase());
-            data.push(valueHistorico.close);
+
+            // request a weekday along with a long date
+            let options = { year: 'numeric', month: 'short', day: 'numeric' };
+
+            let label = new Date(valueHistorico.data).toLocaleString('default', options).toString().toUpperCase()
+            labels.push(label);
+            data.push(valueHistorico.close)
+            dataChartGoogle.push([label, valueHistorico.close, value.precoMedio]);
           });
 
           let chartData = {
@@ -50,12 +58,23 @@
               pointBorderWidth: 20,
               pointHoverRadius: 4,
               pointHoverBorderWidth: 15,
-              pointRadius: 4,
+              pointRadius: 1,
               data: data,
             }]
           };
 
+          /*
+          //GOOGLE CHART
+         chartData: [
+            ['Mes', 'Inicio', 'Expenses', 'Profit'],
+            ['2014', 1000, 400, 200],
+            ['2015', 1170, 460, 250],
+            ['2016', 660, 1120, 300],
+            ['2017', 1030, 540, 350]
+          ],
+          */
           value["chartData"] = chartData;
+          value["googleChartData"] = dataChartGoogle;
           this.listaTickers.push(value);
         });
 
