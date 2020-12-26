@@ -74,19 +74,13 @@
         </card>
       </div>-->
       <div class="col-lg-12">
-        <card type="chart">
-          <template slot="header">
-            <h1 class="card-category">Histórico Valor Fechamento <b>{{item.ticker}}</b></h1>
-          </template>
-          <div class="chart-area">
-            <GChart
-              type="LineChart"
-              :data="item.googleChartData"
-              :options="chartOptions"/>
-          </div>
-        </card>
+        <div class="chart-area">
+          <GChart
+            type="LineChart"
+            :data="item.googleChartData"
+            :options="chartOptions"/>
+        </div>
       </div>
-      <base-button slot="footer" type="primary" fill>Save</base-button>
     </card>
   </div>
 </template>
@@ -114,7 +108,7 @@ export default {
           textStyle: { color: '#b0bec5', fontName: 'Roboto', fontSize: '12', bold: true}
         },
         legend: {position: 'top', alignment: 'center', textStyle: {color:'#607d8b', fontName: 'Roboto', fontSize: '12'} },
-        colors: ["#0fc174","#00bcd4","#ff0000","#00bcd4","#009688","#4caf50","#8bc34a","#cddc39"],
+        colors: ["#0fc174","#00bcd4","#ff0000","#ff0000","#D4F1F4","#009688","#4caf50","#8bc34a","#cddc39"],
         backgroundColor: 'transparent',
         curveType: 'function',
         lineWidth: 1,
@@ -125,7 +119,12 @@ export default {
           height: '85%'
         },
         series: {
-          2: { pointShape: 'square' , pointSize: 5 }
+          0: { lineWidth: 1 },
+          2: { pointShape: 'square' , pointSize: 5 },
+          3: { lineWidth: 1 },
+          4: { lineWidth: 0.7 },
+          5: { lineWidth: 0.5 },
+          6: { lineWidth: 0.3 }
         }
       },
       dataChart : []

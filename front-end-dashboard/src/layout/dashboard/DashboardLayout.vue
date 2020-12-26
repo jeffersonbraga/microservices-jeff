@@ -2,16 +2,14 @@
   <div class="wrapper">
     <side-bar>
       <template slot="links">
+        <sidebar-link to="/aporte" :name="$t('sidebar.aporte')" icon="tim-icons icon-single-02"/>
         <sidebar-link to="/tickers" :name="$t('sidebar.tickersDetail')" icon="tim-icons icon-single-02"/>
       </template>
     </side-bar>
     <div class="main-panel">
       <top-navbar></top-navbar>
-
       <dashboard-content @click.native="toggleSidebar">
-
       </dashboard-content>
-
       <content-footer></content-footer>
     </div>
   </div>

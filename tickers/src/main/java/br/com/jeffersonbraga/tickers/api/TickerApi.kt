@@ -1,51 +1,51 @@
-package br.com.jeffersonbraga.tickers.api;
+package br.com.jeffersonbraga.tickers.api
 
-import br.com.jeffersonbraga.tickers.model.ticker.Ticker;
-import br.com.jeffersonbraga.tickers.repository.TickerRepository;
-import com.fasterxml.jackson.core.JsonProcessingException;
-import com.fasterxml.jackson.databind.ObjectMapper;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.jms.core.JmsTemplate;
-import org.springframework.web.bind.annotation.*;
-
-import java.util.List;
-import java.util.Optional;
+import org.springframework.jms.core.JmsTemplate
+import br.com.jeffersonbraga.tickers.repository.TickerRepository
+import kotlin.Throws
+import br.com.jeffersonbraga.tickers.repository.BuyTickerRepository
+import br.com.jeffersonbraga.tickers.model.buyticker.BuyTicker
+import br.com.jeffersonbraga.tickers.repository.TickerHistoryRepository
+import br.com.jeffersonbraga.tickers.model.history.TickerHistory
+import br.com.jeffersonbraga.tickers.model.ticker.Ticker
+import com.fasterxml.jackson.core.JsonProcessingException
+import com.fasterxml.jackson.databind.ObjectMapper
+import org.springframework.beans.factory.annotation.Autowired
+import org.springframework.web.bind.annotation.*
+import java.util.*
 
 @RestController
 @RequestMapping("ticker")
-public class TickerApi {
+class TickerApi {
+    @Autowired
+    private val jmsTemplate: JmsTemplate? = null
 
     @Autowired
-    private JmsTemplate jmsTemplate;
+    private val objectMapper: ObjectMapper? = null
 
     @Autowired
-    private ObjectMapper objectMapper;
-
-    @Autowired
-    private TickerRepository repository;
-
+    private val repository: TickerRepository? = null
     @GetMapping
-    public List<Ticker> all() {
-        return repository.findAll();
+    fun all(): List<Ticker> {
+        return repository!!.findAll()
     }
 
     @GetMapping("{id}")
-    public Optional<Ticker> one(@PathVariable("id") Long id) {
-        return repository.findById(id);
+    fun one(@PathVariable("id") id: Long): Optional<Ticker> {
+        return repository!!.findById(id)
     }
 
     @PostMapping
-    public Ticker insert(@RequestBody Ticker ticker) throws JsonProcessingException {
-        repository.save(ticker);
-
-        var tickerJson = objectMapper.writeValueAsString(ticker);
-        jmsTemplate.convertAndSend("queue.ticker.insert", tickerJson);
-
-        return ticker;
+    @Throws(JsonProcessingException::class)
+    fun insert(@RequestBody ticker: Ticker): Ticker {
+        repository!!.save(ticker)
+        val tickerJson = objectMapper!!.writeValueAsString(ticker)
+        jmsTemplate!!.convertAndSend("queue.ticker.insert", tickerJson)
+        return ticker
     }
 
     @DeleteMapping("{id}")
-    public void delete(@PathVariable("id") Long id) {
-        repository.deleteById(id);
+    fun delete(@PathVariable("id") id: Long) {
+        repository!!.deleteById(id)
     }
 }

@@ -1,35 +1,35 @@
-package br.com.jeffersonbraga.tickers.api;
+package br.com.jeffersonbraga.tickers.api
 
-import br.com.jeffersonbraga.tickers.model.buyticker.BuyTicker;
-import br.com.jeffersonbraga.tickers.model.ticker.Ticker;
-import br.com.jeffersonbraga.tickers.repository.BuyTickerRepository;
-import br.com.jeffersonbraga.tickers.repository.TickerHistoryRepository;
-import com.fasterxml.jackson.core.JsonProcessingException;
-import com.fasterxml.jackson.databind.ObjectMapper;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.jms.core.JmsTemplate;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.jms.core.JmsTemplate
+import br.com.jeffersonbraga.tickers.repository.TickerRepository
+import kotlin.Throws
+import br.com.jeffersonbraga.tickers.repository.BuyTickerRepository
+import br.com.jeffersonbraga.tickers.model.buyticker.BuyTicker
+import br.com.jeffersonbraga.tickers.repository.TickerHistoryRepository
+import br.com.jeffersonbraga.tickers.model.history.TickerHistory
+import com.fasterxml.jackson.core.JsonProcessingException
+import com.fasterxml.jackson.databind.ObjectMapper
+import org.springframework.beans.factory.annotation.Autowired
+import org.springframework.web.bind.annotation.PostMapping
+import org.springframework.web.bind.annotation.RequestBody
+import org.springframework.web.bind.annotation.RequestMapping
+import org.springframework.web.bind.annotation.RestController
 
 @RestController
 @RequestMapping("ticker/buy")
-public class TickerBuyApi {
+class TickerBuyApi {
+    @Autowired
+    private val jmsTemplate: JmsTemplate? = null
 
     @Autowired
-    private JmsTemplate jmsTemplate;
+    private val objectMapper: ObjectMapper? = null
 
     @Autowired
-    private ObjectMapper objectMapper;
-
-    @Autowired
-    private BuyTickerRepository repository;
-
+    private val repository: BuyTickerRepository? = null
     @PostMapping
-    public BuyTicker insert(@RequestBody BuyTicker ticker) throws JsonProcessingException {
-        repository.save(ticker);
-
-        var tickerJson = objectMapper.writeValueAsString(ticker);
-        jmsTemplate.convertAndSend("queue.buy_ticker.insert", tickerJson);
-
-        return ticker;
+    @Throws(JsonProcessingException::class)
+    fun insert(@RequestBody ticker: BuyTicker): BuyTicker {
+        repository!!.save(ticker)
+        return ticker
     }
 }

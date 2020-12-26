@@ -32,4 +32,16 @@ class TickerHistory : Serializable {
 
     @Column(name = "VOLUME")
     var volume: Double? = null
+
+    @Transient
+    var mediaMovel20: Double? = null
+
+    @Transient
+    var mediaMovel50: Double? = null
+
+    @Transient
+    var mediaMovel100: Double? = null
+
+    @Transient
+    var mediaMovel200: Double? = null
 }

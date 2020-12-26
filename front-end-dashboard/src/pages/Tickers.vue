@@ -1,19 +1,24 @@
 <template>
   <div class="row">
-    <div class="col-md-12">
-      <edit-profile-form :model="itemDetail" :lista="listaTickers">
-      </edit-profile-form>
+    <div class="col-md-8">
+      <ticker-list :model="itemDetail" :lista="listaTickers">
+      </ticker-list>
+    </div>
+    <div class="col-md-4">
+      <ticker-resume></ticker-resume>
     </div>
   </div>
 </template>
 <script>
-  import EditProfileForm from './TickerManager/EditProfileForm';
+  import TickerList from './TickerManager/TickerList';
   import config from "@/config";
+  import TickerResume from "@/pages/TickerManager/TickerResume";
   //import moment from 'moment';
 
   export default {
     components: {
-      EditProfileForm
+      TickerResume,
+      TickerList
     },
     mounted() {
 
@@ -25,7 +30,7 @@
 
           let labels = [];
           let dataChartGoogle = [];
-          dataChartGoogle.push(["Mes", "Fechamento", "Medio", "Compra"]);
+          dataChartGoogle.push(["Mes", "Fechamento", "Medio", "Compra", "MediaMovel20", "MediaMovel50", "MediaMovel100", "MediaMovel200"]);
           value.listaDadosHistorico.forEach((valueHistorico, indexHistorico) => {
             //console.log(moment(String(valueHistorico.data)).format('MM/DD/YYYY hh:mm'));
 
@@ -42,7 +47,7 @@
               }
             });
 
-            dataChartGoogle.push([label, valueHistorico.close, value.precoMedio, comprado]);
+            dataChartGoogle.push([label, valueHistorico.close, value.precoMedio, comprado, valueHistorico.mediaMovel20, valueHistorico.mediaMovel50, valueHistorico.mediaMovel100, valueHistorico.mediaMovel200]);
           });
 
           value["googleChartData"] = dataChartGoogle;
