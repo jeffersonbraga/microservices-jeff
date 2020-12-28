@@ -99,8 +99,7 @@ export default {
         hAxis: {
           titleTextStyle: {color: '#607d8b'},
           gridlines: {color:'#37474f'},
-          textStyle: { color: '#b0bec5', fontName: 'Roboto', fontSize: '12', bold: true},
-          scaleType: 'log'
+          textStyle: { color: '#b0bec5', fontName: 'Roboto', fontSize: '12', bold: true}
         },
         vAxis: {
           gridlines: {color:'#37474f', count:0},
@@ -108,7 +107,7 @@ export default {
           textStyle: { color: '#b0bec5', fontName: 'Roboto', fontSize: '12', bold: true}
         },
         legend: {position: 'top', alignment: 'center', textStyle: {color:'#607d8b', fontName: 'Roboto', fontSize: '12'} },
-        colors: ["#0fc174","#00bcd4","#ff0000","#ff0000","#D4F1F4","#009688","#4caf50","#8bc34a","#cddc39"],
+        colors: ["#0fc174","#00bcd4","#ff0000","#ff0000","#D4F1F4","#009688","#4caf50","#c6c6c6"],
         backgroundColor: 'transparent',
         curveType: 'function',
         lineWidth: 1,
@@ -124,7 +123,9 @@ export default {
           3: { lineWidth: 1 },
           4: { lineWidth: 0.7 },
           5: { lineWidth: 0.5 },
-          6: { lineWidth: 0.3 }
+          6: { lineWidth: 0.3 },
+          //6: { lineWidth: 0.3, targetAxisIndex:1 },
+          //7: { lineWidth: 0.3, logscale: true, targetAxisIndex:1 }
         }
       },
       dataChart : []

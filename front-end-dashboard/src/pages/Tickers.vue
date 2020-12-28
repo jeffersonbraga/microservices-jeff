@@ -5,7 +5,7 @@
       </ticker-list>
     </div>
     <div class="col-md-4">
-      <ticker-resume></ticker-resume>
+      <ticker-resume :listaCompras="listaCompras" :listaResume="listaResume"></ticker-resume>
     </div>
   </div>
 </template>
@@ -16,53 +16,98 @@
   //import moment from 'moment';
 
   export default {
+
+    methods : {
+      efetuarBuscaDadosTickers() {
+
+        this.$http.get("http://localhost:8085/ticker/cards").then(result => {
+          //this.listaTickers = (result.body);
+          let listaAux = (result.body);
+
+          listaAux.forEach((value, index) => {
+
+            let labels = [];
+            let dataChartGoogle = [];
+            dataChartGoogle.push(["Mes", "Fechamento", "Medio", "Compra", "MediaMovel20", "MediaMovel50", "MediaMovel100", "MediaMovel200"]);
+            value.listaDadosHistorico.forEach((valueHistorico, indexHistorico) => {
+              //console.log(moment(String(valueHistorico.data)).format('MM/DD/YYYY hh:mm'));
+
+              // request a weekday along with a long date
+              let options = { year: 'numeric', month: 'short', day: 'numeric' };
+              let label = new Date(valueHistorico.data).toLocaleString('default', options).toString().toUpperCase()
+              labels.push(label);
+
+              let comprado = null;
+
+              value.listaDadosCompras.forEach((valueComprado, indexComprado) => {
+                if (new Date(valueComprado.data).toLocaleString('default', options).toString().toUpperCase() == label) {
+                  comprado = (valueComprado.valor / valueComprado.quantidade);
+                }
+              });
+
+              dataChartGoogle.push([label, valueHistorico.close, value.precoMedio, comprado, valueHistorico.mediaMovel20, valueHistorico.mediaMovel50, valueHistorico.mediaMovel100, valueHistorico.mediaMovel200]);
+            });
+
+            value["googleChartData"] = dataChartGoogle;
+            this.listaTickers.push(value);
+          });
+
+          this.itemDetail = this.listaTickers[0];
+        }, error => {
+          console.error(error);
+        });
+      },
+
+      efetuarBuscaDadosInvestimento() {
+
+        this.$http.get("http://localhost:8085/ticker/resume").then(result => {
+          this.processarDonutChart(result.body);
+        }, error => {
+          console.error(error);
+        });
+      },
+
+      processarDonutChart(listaProcessar) {
+
+        let labels = [];
+        let dataChartAporte = [];
+        let dataChartCompras = [];
+        dataChartAporte.push(["Data", "Valor"]);
+        dataChartCompras.push(["Ticker", "Valor"]);
+        listaProcessar.listaDadosAportes.forEach((valueAporte, indexHistorico) => {
+
+          let options = { year: 'numeric', month: 'short', day: 'numeric' };
+          let label = new Date(valueAporte.data).toLocaleString('default', options).toString().toUpperCase()
+          labels.push(label);
+          dataChartAporte.push([label, valueAporte.valor]);
+        });
+
+        listaProcessar.listaDadosCompras.forEach((valueCompras, indexHistorico) => {
+
+          let options = { year: 'numeric', month: 'short', day: 'numeric' };
+          let label = new Date(valueCompras.data).toLocaleString('default', options).toString().toUpperCase()
+          labels.push(label);
+          dataChartCompras.push([valueCompras.ticker, valueCompras.valor]);
+        });
+
+        this.listaResume = dataChartAporte;
+        this.listaCompras = dataChartCompras;
+      }
+    },
     components: {
       TickerResume,
       TickerList
     },
     mounted() {
-
-      this.$http.get("http://localhost:8085/ticker/cards").then(result => {
-        //this.listaTickers = (result.body);
-        let listaAux = (result.body);
-
-        listaAux.forEach((value, index) => {
-
-          let labels = [];
-          let dataChartGoogle = [];
-          dataChartGoogle.push(["Mes", "Fechamento", "Medio", "Compra", "MediaMovel20", "MediaMovel50", "MediaMovel100", "MediaMovel200"]);
-          value.listaDadosHistorico.forEach((valueHistorico, indexHistorico) => {
-            //console.log(moment(String(valueHistorico.data)).format('MM/DD/YYYY hh:mm'));
-
-            // request a weekday along with a long date
-            let options = { year: 'numeric', month: 'short', day: 'numeric' };
-            let label = new Date(valueHistorico.data).toLocaleString('default', options).toString().toUpperCase()
-            labels.push(label);
-
-            let comprado = null;
-
-            value.listaDadosCompras.forEach((valueComprado, indexComprado) => {
-              if (new Date(valueComprado.data).toLocaleString('default', options).toString().toUpperCase() == label) {
-                comprado = (valueComprado.valor / valueComprado.quantidade);
-              }
-            });
-
-            dataChartGoogle.push([label, valueHistorico.close, value.precoMedio, comprado, valueHistorico.mediaMovel20, valueHistorico.mediaMovel50, valueHistorico.mediaMovel100, valueHistorico.mediaMovel200]);
-          });
-
-          value["googleChartData"] = dataChartGoogle;
-          this.listaTickers.push(value);
-        });
-
-        this.itemDetail = this.listaTickers[0];
-      }, error => {
-        console.error(error);
-      });
+      this.efetuarBuscaDadosTickers();
+      this.efetuarBuscaDadosInvestimento();
     },
     data() {
       return {
         itemDetail : {},
         listaTickers : [],
+        listaResume : [],
+        listaCompras : [],
         user: {
           fullName: 'Mike Andrew',
           title: 'Ceo/Co-Founder',

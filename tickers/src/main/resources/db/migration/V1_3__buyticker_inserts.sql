@@ -4,4 +4,4 @@ INSERT INTO public.buy_ticker (id, valor, data, quantidade, ticker) VALUES (DEFA
 INSERT INTO public.buy_ticker (id, valor, data, quantidade, ticker) VALUES (DEFAULT, 117.7, '2020-11-26 10:25:21.000000', 11, 'ITSA4.SA');
 INSERT INTO public.buy_ticker (id, valor, data, quantidade, ticker) VALUES (DEFAULT, 535.6, '2020-12-17 10:25:21.000000', 20, 'SLCE3.SA');
 INSERT INTO public.buy_ticker (id, valor, data, quantidade, ticker) VALUES (DEFAULT, 1093.41, '2020-12-21 10:25:21.000000', 100, 'ITSA4.SA');
-INSERT INTO public.buy_ticker (id, valor, data, quantidade, ticker) VALUES (DEFAULT, 459, '2020-12-23 10:25:21.000000', 10, 'COGN3.SA');
+INSERT INTO public.buy_ticker (id, valor, data, quantidade, ticker) VALUES (DEFAULT, 45.9, '2020-12-23 10:25:21.000000', 10, 'COGN3.SA');
