@@ -1,11 +1,8 @@
 <template>
   <div class="row">
-    <div class="col-md-8">
+    <div class="col-md-12">
       <ticker-list :model="itemDetail" :lista="listaTickers">
       </ticker-list>
-    </div>
-    <div class="col-md-4">
-      <ticker-resume :listaCompras="listaCompras" :listaResume="listaResume" :listaPatrimonio="listaPatrimonio" :dadosResumo="dadosResumo"></ticker-resume>
     </div>
   </div>
 </template>
@@ -20,7 +17,7 @@
     methods : {
       efetuarBuscaDadosTickers() {
 
-        this.$http.get("http://localhost:8085/ticker/cards").then(result => {
+        this.$http.get("http://localhost:8085/ticker/discovery").then(result => {
           //this.listaTickers = (result.body);
           let listaAux = (result.body);
 
@@ -29,7 +26,7 @@
 
             let labels = [];
             let dataChartGoogle = [];
-            dataChartGoogle.push(["Mes", "Fechamento", "Medio", "Compra", "MediaMovel20", "MediaMovel50", "MediaMovel100", "MediaMovel200"]);
+            dataChartGoogle.push(["Mes", "Fechamento", "MediaMovel20", "MediaMovel50", "MediaMovel100", "MediaMovel200"]);
             value.listaDadosHistorico.forEach((valueHistorico, indexHistorico) => {
               //console.log(moment(String(valueHistorico.data)).format('MM/DD/YYYY hh:mm'));
 
@@ -46,15 +43,11 @@
                 }
               });
 
-              dataChartGoogle.push([label, valueHistorico.close, value.precoMedio, comprado, valueHistorico.mediaMovel20, valueHistorico.mediaMovel50, valueHistorico.mediaMovel100, valueHistorico.mediaMovel200]);
+              dataChartGoogle.push([label, valueHistorico.close, valueHistorico.mediaMovel20, valueHistorico.mediaMovel50, valueHistorico.mediaMovel100, valueHistorico.mediaMovel200]);
             });
 
             value["googleChartData"] = dataChartGoogle;
             this.listaTickers.push(value);
-            let valorPatrimonioItem = parseFloat(value.valorAtual * value.quantidade);
-
-            this.listaPatrimonio.push([value.ticker, valorPatrimonioItem]);
-            this.dadosResumo.valorTotalPatrimonio += valorPatrimonioItem;
           });
 
           this.itemDetail = this.listaTickers[0];
@@ -62,44 +55,6 @@
           console.error(error);
         });
       },
-
-      efetuarBuscaDadosInvestimento() {
-
-        this.$http.get("http://localhost:8085/ticker/resume").then(result => {
-          this.processarDonutChart(result.body);
-        }, error => {
-          console.error(error);
-        });
-      },
-
-      processarDonutChart(listaProcessar) {
-
-        let labels = [];
-        let dataChartAporte = [];
-        let dataChartCompras = [];
-        dataChartAporte.push(["Data", "Valor"]);
-        dataChartCompras.push(["Ticker", "Valor"]);
-        listaProcessar.listaDadosAportes.forEach((valueAporte, indexHistorico) => {
-
-          let options = { year: 'numeric', month: 'short', day: 'numeric' };
-          let label = new Date(valueAporte.data).toLocaleString('default', options).toString().toUpperCase()
-          labels.push(label);
-          dataChartAporte.push([label, valueAporte.valor]);
-          this.dadosResumo.valorTotalAportes += valueAporte.valor;
-        });
-
-        listaProcessar.listaDadosCompras.forEach((valueCompras, indexHistorico) => {
-
-          let options = { year: 'numeric', month: 'short', day: 'numeric' };
-          let label = new Date(valueCompras.data).toLocaleString('default', options).toString().toUpperCase()
-          labels.push(label);
-          dataChartCompras.push([valueCompras.ticker, valueCompras.valor]);
-          this.dadosResumo.valorTotalInvestido += valueCompras.valor;
-        });
-
-        this.listaResume = dataChartAporte;
-        this.listaCompras = dataChartCompras;
-      }
     },
     components: {
       TickerResume,
@@ -110,7 +65,6 @@
       this.dadosResumo.valorTotalInvestido = 0;
       this.dadosResumo.valorTotalPatrimonio = 0;
       this.efetuarBuscaDadosTickers();
-      this.efetuarBuscaDadosInvestimento();
     },
     data() {
       return {

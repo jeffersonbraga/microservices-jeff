@@ -6,6 +6,7 @@ import NotFound from "@/pages/NotFoundPage.vue";
 const Dashboard = () => import(/* webpackChunkName: "dashboard" */"@/pages/Dashboard.vue");
 const Profile = () => import(/* webpackChunkName: "common" */ "@/pages/Profile.vue");
 const Tickers = () => import(/* webpackChunkName: "common" */ "@/pages/Tickers.vue");
+const Discovery = () => import(/* webpackChunkName: "common" */ "@/pages/Discovery.vue");
 const Aporte = () => import(/* webpackChunkName: "common" */ "@/pages/Aporte.vue");
 const Notifications = () => import(/* webpackChunkName: "common" */"@/pages/Notifications.vue");
 const Icons = () => import(/* webpackChunkName: "common" */ "@/pages/Icons.vue");
@@ -33,6 +34,11 @@ const routes = [
         path: "aporte",
         name: "aporte",
         component: Aporte
+      },
+      {
+        path: "discovery",
+        name: "discovery",
+        component: Discovery
       },
       {
         path: "tickers",

@@ -66,7 +66,7 @@ class TickerCardApi {
                 valorTotalInvestido += itCompraTicker.valor!!
                 qtdCompras = qtdCompras.plus(1.0)
                 tickerCard.listaDadosCompras.add(itCompraTicker)
-                tickerCard.listaDadosHistorico = listaHistory.filter { itHistory -> itHistory.idTicker == itTicker.ticker }
+                tickerCard.listaDadosHistorico = listaHistory.filter { itHistory -> itHistory.idTicker == itTicker.ticker }.toMutableList()
 
                 isTickerComprado = true
             }
@@ -87,6 +87,8 @@ class TickerCardApi {
                 tickerCard.percentualDiferenca = (tickerCard.valorAtual!!.div(tickerCard.precoMedio!!) * 100.0) - 100.0
                 tickerCard.listaDadosHistorico?.sortedBy { it.data }
                 getMediaMovel(tickerCard.listaDadosHistorico)
+
+                tickerCard.mediaMayer = tickerCard?.valorAtual?.div(tickerCard?.listaDadosHistorico?.last()?.mediaMovel200?:1.0)
                 listaCards.add(tickerCard)
             }
         }
@@ -95,7 +97,7 @@ class TickerCardApi {
             val tickerHistoryFilter = TickerHistory()
             tickerHistoryFilter.idTicker = itemTicker.ticker
         }*/
-        listaCards.sortBy { it.ticker }
+        listaCards.sortByDescending { it.quantidade }
         return listaCards
     }
 

@@ -9,11 +9,12 @@ class TickerCard {
     var data: Date? = null
     var precoMedio: Double? = null
     var valorAtual: Double? = null
+    var mediaMayer: Double? = null
     var diferencaPreco: Double? = null
     var percentualDiferenca: Double? = null
     var quantidade: Double? = null
     var valorTotalInvestido: Double? = null
     var valorTotalAtual: Double? = null
-    var listaDadosHistorico : List<TickerHistory>? = null
+    var listaDadosHistorico : MutableList<TickerHistory>? = null
     var listaDadosCompras : MutableList<BuyTicker> = mutableListOf<BuyTicker>()
 }
