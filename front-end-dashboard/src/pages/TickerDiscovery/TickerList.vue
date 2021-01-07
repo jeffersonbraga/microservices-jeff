@@ -3,20 +3,20 @@
     <card v-for="item in lista">
       <h5 slot="header" class="title">{{item.ticker}}</h5>
       <div class="row">
-        <div class="col-md-5 pr-md-1">
+        <div class="col-md-2 pr-md-1">
           <base-input label="Company (disabled)"
                     placeholder="Company"
                     v-model="item.ticker"
                     disabled>
           </base-input>
         </div>
-        <div class="col-md-3 px-md-1">
-          <base-input label="Preço Médio"
-                    placeholder="Preço Médio"
-                    v-model="item.precoMedio">
+        <div class="col-md-8 px-md-1">
+          <base-input label="Nome"
+                    placeholder="Nome"
+                    v-model="item.nome">
           </base-input>
         </div>
-        <div class="col-md-4 pl-md-1">
+        <div class="col-md-2 pl-md-1">
           <base-input label="Valor Atual"
                     placeholder="Valor Atual"
                     v-model="item.valorAtual">
@@ -28,26 +28,6 @@
           <base-input label="Diferença Valores"
                     v-model="item.diferencaPreco"
                     placeholder="Diferença Valores">
-          </base-input>
-        </div>
-        <div class="col-md-4 pl-md-1">
-          <base-input label="Quantidade"
-                      v-model="item.quantidade"
-                      placeholder="Quantidade">
-          </base-input>
-        </div>
-        <div class="col-md-4 pl-md-1">
-          <base-input label="Valor Multiplicado"
-                      v-model="item.quantidade * item.diferencaPreco"
-                      placeholder="Valor Multiplicado">
-          </base-input>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-4">
-          <base-input label="Valor Total Investido"
-                    v-model="item.valorTotalInvestido"
-                    placeholder="Valor Total Investido">
           </base-input>
         </div>
         <div class="col-md-4">
@@ -63,22 +43,6 @@
           </base-input>
         </div>
       </div>
-      <!--<div class="col-lg-12">
-        <card type="chart">
-          <template slot="header">
-            <h1 class="card-category">Histórico Valor Fechamento <b>{{item.ticker}}</b></h1>
-          </template>
-          <div class="chart-area">
-            <line-chart style="height: 100%"
-                        chart-id="purple-line-chart"
-                        :chart-data="item.chartData"
-                        :gradient-colors="purpleLineChart.gradientColors"
-                        :gradient-stops="purpleLineChart.gradientStops"
-                        :extra-options="purpleLineChart.extraOptions">
-            </line-chart>
-          </div>
-        </card>
-      </div>-->
       <div class="col-lg-12">
         <div class="chart-area">
           <GChart
@@ -113,7 +77,7 @@ export default {
           textStyle: { color: '#b0bec5', fontName: 'Roboto', fontSize: '12', bold: true}
         },
         legend: {position: 'top', alignment: 'center', textStyle: {color:'#607d8b', fontName: 'Roboto', fontSize: '12'} },
-        colors: ["#0fc174","#00bcd4","#ff0000","#ff0000","#D4F1F4","#009688","#4caf50","#c6c6c6"],
+        colors: ["#0fc174","#00bcd4","#ff0000","#0ff000","#D4F1F4","#009688","#4caf50","#c6c6c6"],
         backgroundColor: 'transparent',
         curveType: 'function',
         lineWidth: 1,
@@ -125,7 +89,7 @@ export default {
         },
         series: {
           0: { lineWidth: 1 },
-          2: { pointShape: 'square' , pointSize: 5 },
+          2: { lineWidth: 1 },
           3: { lineWidth: 1 },
           4: { lineWidth: 0.7 },
           5: { lineWidth: 0.5 },

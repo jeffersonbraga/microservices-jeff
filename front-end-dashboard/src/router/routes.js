@@ -6,7 +6,9 @@ import NotFound from "@/pages/NotFoundPage.vue";
 const Dashboard = () => import(/* webpackChunkName: "dashboard" */"@/pages/Dashboard.vue");
 const Profile = () => import(/* webpackChunkName: "common" */ "@/pages/Profile.vue");
 const Tickers = () => import(/* webpackChunkName: "common" */ "@/pages/Tickers.vue");
-const Discovery = () => import(/* webpackChunkName: "common" */ "@/pages/Discovery.vue");
+const Discovery100 = () => import(/* webpackChunkName: "common" */ "@/pages/Discovery100.vue");
+const Discovery50 = () => import(/* webpackChunkName: "common" */ "@/pages/Discovery50.vue");
+const Imobiliario = () => import(/* webpackChunkName: "common" */ "@/pages/Imobiliario.vue");
 const Aporte = () => import(/* webpackChunkName: "common" */ "@/pages/Aporte.vue");
 const Notifications = () => import(/* webpackChunkName: "common" */"@/pages/Notifications.vue");
 const Icons = () => import(/* webpackChunkName: "common" */ "@/pages/Icons.vue");
@@ -36,9 +38,19 @@ const routes = [
         component: Aporte
       },
       {
-        path: "discovery",
-        name: "discovery",
-        component: Discovery
+        path: "ibrx100",
+        name: "ibrx100",
+        component: Discovery100
+      },
+      {
+        path: "ibrx50",
+        name: "ibrx50",
+        component: Discovery50
+      },
+      {
+        path: "imobiliario",
+        name: "imobiliario",
+        component: Imobiliario
       },
       {
         path: "tickers",

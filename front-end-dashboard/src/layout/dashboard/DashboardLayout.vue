@@ -4,7 +4,9 @@
       <template slot="links">
         <sidebar-link to="/aporte" :name="$t('sidebar.aporte')" icon="tim-icons icon-single-02"/>
         <sidebar-link to="/tickers" :name="$t('sidebar.tickersDetail')" icon="tim-icons icon-single-02"/>
-        <sidebar-link to="/discovery" :name="$t('sidebar.discovery')" icon="tim-icons icon-single-02"/>
+        <sidebar-link to="/ibrx100" :name="$t('sidebar.ibrx100')" icon="tim-icons icon-single-02"/>
+        <sidebar-link to="/ibrx50" :name="$t('sidebar.ibrx50')" icon="tim-icons icon-single-02"/>
+        <sidebar-link to="/imobiliario" :name="$t('sidebar.imobiliario')" icon="tim-icons icon-single-02"/>
       </template>
     </side-bar>
     <div class="main-panel">

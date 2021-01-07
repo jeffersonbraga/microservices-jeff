@@ -6,6 +6,7 @@ import br.com.jeffersonbraga.tickers.repository.BuyTickerRepository
 import br.com.jeffersonbraga.tickers.repository.TickerCurrentStatusRepository
 import br.com.jeffersonbraga.tickers.repository.TickerRepository
 import br.com.jeffersonbraga.tickers.repository.TickerHistoryRepository
+import br.com.jeffersonbraga.tickers.service.TickerService
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.web.bind.annotation.CrossOrigin
 import org.springframework.web.bind.annotation.GetMapping
@@ -86,7 +87,7 @@ class TickerCardApi {
             if (isTickerComprado) {
                 tickerCard.percentualDiferenca = (tickerCard.valorAtual!!.div(tickerCard.precoMedio!!) * 100.0) - 100.0
                 tickerCard.listaDadosHistorico?.sortedBy { it.data }
-                getMediaMovel(tickerCard.listaDadosHistorico)
+                TickerService.getMediaMovel(tickerCard.listaDadosHistorico)
 
                 tickerCard.mediaMayer = tickerCard?.valorAtual?.div(tickerCard?.listaDadosHistorico?.last()?.mediaMovel200?:1.0)
                 listaCards.add(tickerCard)
@@ -99,60 +100,5 @@ class TickerCardApi {
         }*/
         listaCards.sortByDescending { it.quantidade }
         return listaCards
-    }
-
-    fun getMediaMovel(listaDadosHistorico: List<TickerHistory>?) {
-
-        /*
-        Períodos Considerados	20	    50	    100	    200
-        Valor do K (na MME)	    0,10	0,04	0,02	0,01
-         */
-
-        val fator20 = 0.10
-        val fator50 = 0.04
-        val fator100 = 0.02
-        val fator200 = 0.01
-
-        var periodoAtual    = 0.0
-        var totalAtual      = 0.0
-        var mme20       = listaDadosHistorico!!.subList(0, 20).sumByDouble { it.close?:0.0 }.div(20.0)
-        var mme50       = listaDadosHistorico!!.subList(0, 50).sumByDouble { it.close?:0.0 }.div(50.0)
-        var mme100      = listaDadosHistorico!!.subList(0, 100).sumByDouble { it.close?:0.0 }.div(100.0)
-        var mme200      = listaDadosHistorico!!.subList(0, 200).sumByDouble { it.close?:0.0 }.div(200.0)
-        listaDadosHistorico!!.forEach { itHistory ->
-
-            periodoAtual += 1.0
-            totalAtual += itHistory.close?:0.0
-            if (periodoAtual > 20) {
-                val primeiroParam : Double = ((itHistory.close?:0.0).minus(mme20))
-                itHistory.mediaMovel20 = primeiroParam.times(fator20).plus(mme20)
-                println(itHistory.mediaMovel20)
-                mme20 = itHistory.mediaMovel20!!
-            }
-
-            if (periodoAtual >= 50) {
-                val primeiroParam : Double = ((itHistory.close?:0.0).minus(mme50))
-                itHistory.mediaMovel50 = primeiroParam.times(fator50).plus(mme50)
-                println(itHistory.mediaMovel50)
-                mme50 = itHistory.mediaMovel50!!
-            }
-
-            if (periodoAtual >= 100) {
-                val primeiroParam : Double = ((itHistory.close?:0.0).minus(mme100))
-                itHistory.mediaMovel100 = primeiroParam.times(fator100).plus(mme100)
-                println(itHistory.mediaMovel100)
-                mme100 = itHistory.mediaMovel100!!
-            }
-
-            if (periodoAtual >= 200) {
-                val primeiroParam : Double = ((itHistory.close?:0.0).minus(mme200))
-                itHistory.mediaMovel200 = primeiroParam.times(fator200).plus(mme200)
-                println(itHistory.mediaMovel200)
-                mme200 = itHistory.mediaMovel200!!
-            }
-
-            //mediaAtual = totalAtual.div(periodoAtual)
-        }
-
     }
 }

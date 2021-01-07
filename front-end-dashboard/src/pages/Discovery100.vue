@@ -7,10 +7,7 @@
   </div>
 </template>
 <script>
-  import TickerList from './TickerManager/TickerList';
-  import config from "@/config";
-  import TickerResume from "@/pages/TickerManager/TickerResume";
-  //import moment from 'moment';
+  import TickerList from './TickerDiscovery/TickerList';
 
   export default {
 
@@ -35,14 +32,6 @@
               let label = new Date(valueHistorico.data).toLocaleString('default', options).toString().toUpperCase()
               labels.push(label);
 
-              let comprado = null;
-
-              value.listaDadosCompras.forEach((valueComprado, indexComprado) => {
-                if (new Date(valueComprado.data).toLocaleString('default', options).toString().toUpperCase() == label) {
-                  comprado = (valueComprado.valor / valueComprado.quantidade);
-                }
-              });
-
               dataChartGoogle.push([label, valueHistorico.close, valueHistorico.mediaMovel20, valueHistorico.mediaMovel50, valueHistorico.mediaMovel100, valueHistorico.mediaMovel200]);
             });
 
@@ -57,7 +46,6 @@
       },
     },
     components: {
-      TickerResume,
       TickerList
     },
     mounted() {
