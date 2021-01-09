@@ -14,7 +14,7 @@
     methods : {
       efetuarBuscaDadosTickers() {
 
-        this.$http.get("http://localhost:8085/ticker/discovery").then(result => {
+        this.$http.get("http://localhost:8085/ticker/discovery?search=ifix").then(result => {
           //this.listaTickers = (result.body);
           let listaAux = (result.body);
 
