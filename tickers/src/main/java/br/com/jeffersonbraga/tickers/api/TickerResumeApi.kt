@@ -3,6 +3,7 @@ package br.com.jeffersonbraga.tickers.api
 import br.com.jeffersonbraga.tickers.model.resume.Resume
 import br.com.jeffersonbraga.tickers.repository.AporteFinanceiroRepository
 import br.com.jeffersonbraga.tickers.repository.BuyTickerRepository
+import br.com.jeffersonbraga.tickers.repository.TickerSellRepository
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.web.bind.annotation.CrossOrigin
 import org.springframework.web.bind.annotation.GetMapping
@@ -17,6 +18,9 @@ class TickerResumeApi {
     private lateinit var buyRepository: BuyTickerRepository
 
     @Autowired
+    private lateinit var sellRepository: TickerSellRepository
+
+    @Autowired
     private lateinit var aporteFinanceiroRepository: AporteFinanceiroRepository
 
     @CrossOrigin
@@ -25,6 +29,7 @@ class TickerResumeApi {
 
         val resume = Resume()
         resume.listaDadosCompras = buyRepository.findAll()
+        resume.listaDadosVendas = sellRepository.findAll()
         resume.listaDadosAportes = aporteFinanceiroRepository.findAll()
         return resume
     }

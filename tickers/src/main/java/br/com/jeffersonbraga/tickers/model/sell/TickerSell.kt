@@ -1,13 +1,13 @@
-package br.com.jeffersonbraga.tickers.model.buyticker
+package br.com.jeffersonbraga.tickers.model.sell
 
 import java.io.Serializable
-import java.math.BigDecimal
 import java.util.*
 import javax.persistence.*
 
 @Entity
-@Table(name = "BUY_TICKER")
-class BuyTicker : Serializable {
+@Table(name = "SELL_TICKER")
+class TickerSell : Serializable {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     var id: Int? = null

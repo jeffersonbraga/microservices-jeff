@@ -3,40 +3,66 @@
     <card v-for="item in lista">
       <h5 slot="header" class="title">{{item.ticker}}</h5>
       <div class="row">
-        <div class="col-md-5 pr-md-1">
+        <div class="col-md-6">
           <base-input label="Company (disabled)"
                     placeholder="Company"
                     v-model="item.ticker"
                     disabled>
           </base-input>
         </div>
-        <div class="col-md-3 px-md-1">
-          <base-input label="Preço Médio"
-                    placeholder="Preço Médio"
-                    v-model="item.precoMedio">
-          </base-input>
-        </div>
-        <div class="col-md-4 pl-md-1">
-          <base-input label="Valor Atual"
-                    placeholder="Valor Atual"
-                    v-model="item.valorAtual">
-          </base-input>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-4 pr-md-1">
-          <base-input label="Diferença Valores"
-                    v-model="item.diferencaPreco"
-                    placeholder="Diferença Valores">
-          </base-input>
-        </div>
-        <div class="col-md-4 pl-md-1">
+        <div class="col-md-2">
           <base-input label="Quantidade"
                       v-model="item.quantidade"
                       placeholder="Quantidade">
           </base-input>
         </div>
-        <div class="col-md-4 pl-md-1">
+      </div>
+      <div class="row">
+        <div class="col-md-3">
+          <base-input label="Valor Atual"
+                      placeholder="Valor Atual"
+                      v-model="item.valorAtual">
+          </base-input>
+        </div>
+        <div class="col-md-3">
+          <base-input label="Preço Médio"
+                      placeholder="Preço Médio"
+                      v-model="item.precoMedio">
+          </base-input>
+        </div>
+        <div class="col-md-3">
+          <base-input label="Mediana"
+                      placeholder="Mediana"
+                      v-model="item.mediana">
+          </base-input>
+        </div>
+        <div class="col-md-3">
+          <base-input label="Media Mayer"
+                      v-model="item.mediaMayer"
+                      placeholder="Media Mayer">
+          </base-input>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3">
+          <base-input label="Valor Total Investido"
+                      v-model="item.valorTotalInvestido"
+                      placeholder="Valor Total Investido">
+          </base-input>
+        </div>
+        <div class="col-md-3">
+          <base-input label="Valor Total Atual"
+                      v-model="item.valorTotalAtual"
+                      placeholder="Valor Total Atual">
+          </base-input>
+        </div>
+        <div class="col-md-3">
+          <base-input label="Diferença Valores"
+                      v-model="item.diferencaPreco"
+                      placeholder="Diferença Valores">
+          </base-input>
+        </div>
+        <div class="col-md-3">
           <base-input label="Valor Multiplicado"
                       v-model="item.quantidade * item.diferencaPreco"
                       placeholder="Valor Multiplicado">
@@ -44,22 +70,16 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-md-4">
-          <base-input label="Valor Total Investido"
-                    v-model="item.valorTotalInvestido"
-                    placeholder="Valor Total Investido">
+        <div class="col-md-3">
+          <base-input label="Quantidade Vendida"
+                      v-model="item.quantidadeVendido"
+                      placeholder="Quantidade Vendida">
           </base-input>
         </div>
-        <div class="col-md-4">
-          <base-input label="Valor Total Atual"
-                      v-model="item.valorTotalAtual"
-                      placeholder="Valor Total Atual">
-          </base-input>
-        </div>
-        <div class="col-md-4">
-          <base-input label="Media Mayer"
-                      v-model="item.mediaMayer"
-                      placeholder="Media Mayer">
+        <div class="col-md-3">
+          <base-input label="Valor Resultado Total Venda"
+                      v-model="item.valorResultadoCompraVenda"
+                      placeholder="Valor Resultado Total Venda">
           </base-input>
         </div>
       </div>
@@ -86,6 +106,50 @@
             :data="item.googleChartData"
             :options="chartOptions"/>
         </div>
+        <div class="row" style="padding-top: 50px">
+          <div class="col-6">
+            <card title="Maiores Fechamentos">
+              <div class="table-responsive" style="overflow: hidden">
+                <base-table :data="item.listaDadosTop10MelhoresPrecos"
+                            :columns="table1.columns"
+                            thead-classes="text-primary">
+                </base-table>
+              </div>
+            </card>
+          </div>
+          <div class="col-6">
+            <card title="Menores Fechamentos">
+              <div class="table-responsive" style="overflow: hidden">
+                <base-table :data="item.listaDadosTop10MenoresPrecos"
+                            :columns="table1.columns"
+                            thead-classes="text-primary">
+                </base-table>
+              </div>
+            </card>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6">
+            <card title="Maiores Volumes">
+              <div class="table-responsive" style="overflow: hidden">
+                <base-table :data="item.listaDadosTop10MelhoresVolume"
+                            :columns="table2.columns"
+                            thead-classes="text-primary">
+                </base-table>
+              </div>
+            </card>
+          </div>
+          <div class="col-6">
+            <card title="Menores Volumes">
+              <div class="table-responsive" style="overflow: hidden">
+                <base-table :data="item.listaDadosTop10MenoresVolume"
+                            :columns="table2.columns"
+                            thead-classes="text-primary">
+                </base-table>
+              </div>
+            </card>
+          </div>
+        </div>
       </div>
     </card>
   </div>
@@ -94,13 +158,25 @@
 
 import config from "@/config";
 import { GChart } from 'vue-google-charts';
+import { BaseTable } from "@/components";
+const tableColumns = ["Data", "Close"];
+const tableColumnsVolume = ["Data", "Volume", "Close"];
 
 export default {
   components: {
-    GChart
+    GChart,
+    BaseTable
   },
   data() {
     return {
+      table1: {
+        title: "Simple Table",
+        columns: [...tableColumns]
+      },
+      table2: {
+        title: "Simple Table",
+        columns: [...tableColumnsVolume]
+      },
       chartOptions: {
         hAxis: {
           titleTextStyle: {color: '#607d8b'},
@@ -132,7 +208,8 @@ export default {
           6: { lineWidth: 0.3 },
           //6: { lineWidth: 0.3, targetAxisIndex:1 },
           //7: { lineWidth: 0.3, logscale: true, targetAxisIndex:1 }
-        }
+        },
+        //trendlines: { 0: {} }    // Draw a trendline for data series 0.
       },
       dataChart : []
     }

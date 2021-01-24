@@ -1,0 +1,1 @@
+INSERT INTO public.sell_ticker (id, valor, data, quantidade, ticker) VALUES (DEFAULT, 332.25, '2021-01-21 10:25:21.000000', 15, 'SAPR11.SA');

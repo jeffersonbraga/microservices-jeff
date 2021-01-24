@@ -26,7 +26,7 @@
       Valorizacão: {{dadosResumo.valorTotalPatrimonio - dadosResumo.valorTotalInvestido}}
     </p>
 
-    <card type="user" style="margin-top: 50px">
+    <card type="user">
       <p class="description text-uppercase">
         Aportes
       </p>
@@ -56,38 +56,12 @@
     </card>
     <card type="user">
       <p class="description text-uppercase">
-        Vendas
-      </p>
-      <div class="col-lg-12">
-        <div class="chart-area">
-          <GChart
-            type="PieChart"
-            :data="listaVendas"
-            :options="chartOptions"/>
-        </div>
-      </div>
-    </card>
-    <card type="user">
-      <p class="description text-uppercase">
         Patrimônio
       </p>
       <div class="col-lg-12">
         <div class="chart-area">
           <GChart
             type="PieChart"
-            :data="listaPatrimonio"
-            :options="chartOptions"/>
-        </div>
-      </div>
-    </card>
-    <card type="user">
-      <p class="description text-uppercase">
-        Patrimônio
-      </p>
-      <div class="col-lg-12">
-        <div class="chart-area">
-          <GChart
-            type="ColumnChart"
             :data="listaPatrimonio"
             :options="chartOptions"/>
         </div>
@@ -170,12 +144,6 @@
         }
       },
       listaCompras: {
-        type: Array,
-        default: () => {
-          return [];
-        }
-      },
-      listaVendas: {
         type: Array,
         default: () => {
           return [];

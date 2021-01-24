@@ -17,6 +17,7 @@
       </span>
     </slot>
     <slot>
+      <span><i v-if="addArrowIcon" class="fas fa-angle-down" style="padding-left: 5px;color:red"></i></span>
       <input
         :value="value"
         v-bind="$attrs"
@@ -39,6 +40,10 @@
     inheritAttrs: false,
     name: "base-input",
     props: {
+      colorArrow :  {
+        type: String,
+        description: "Color for arrow "
+      },
       label: {
         type: String,
         description: "Input label"
@@ -52,6 +57,10 @@
         description: "Input icon on the right"
       },
       addonLeftIcon: {
+        type: String,
+        description: "Input icon on the left"
+      },
+      addArrowIcon: {
         type: String,
         description: "Input icon on the left"
       },

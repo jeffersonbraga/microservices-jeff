@@ -5,19 +5,14 @@
       </ticker-list>
     </div>
     <div class="col-md-4">
-      <ticker-resume
-        :listaVendas="listaVendas"
-        :listaCompras="listaCompras"
-        :listaResume="listaResume"
-        :listaPatrimonio="listaPatrimonio"
-        :dadosResumo="dadosResumo"></ticker-resume>
+      <ticker-resume :listaCompras="listaCompras" :listaResume="listaResume" :listaPatrimonio="listaPatrimonio" :dadosResumo="dadosResumo"></ticker-resume>
     </div>
   </div>
 </template>
 <script>
-  import TickerList from './TickerManager/TickerList';
+  import TickerList from './TickerVolume/TickerList';
   import config from "@/config";
-  import TickerResume from "@/pages/TickerManager/TickerResume";
+  import TickerResume from "@/pages/TickerVolume/TickerResume";
   //import moment from 'moment';
 
   export default {
@@ -25,7 +20,7 @@
     methods : {
       efetuarBuscaDadosTickers() {
 
-        this.$http.get("http://localhost:8085/ticker/cards").then(result => {
+        this.$http.get("http://localhost:8085/ticker/volume").then(result => {
           //this.listaTickers = (result.body);
           let listaAux = (result.body);
 
@@ -36,13 +31,13 @@
             let dataChartGoogle = [];
 
             if (value.listaDadosHistorico.length > 200) {
-              dataChartGoogle.push(["Mes", "Fechamento", "Medio", "Compra", "MediaMovel20", "MediaMovel50", "MediaMovel100", "MediaMovel200"]);
+              dataChartGoogle.push(["Mes", "Volume", "MediaMovel20", "MediaMovel50", "MediaMovel100", "MediaMovel200"]);
             } else if (value.listaDadosHistorico.length > 100) {
-              dataChartGoogle.push(["Mes", "Fechamento", "Medio", "Compra", "MediaMovel20", "MediaMovel50", "MediaMovel100"]);
+              dataChartGoogle.push(["Mes", "Volume", "MediaMovel20", "MediaMovel50", "MediaMovel100"]);
             } else if (value.listaDadosHistorico.length > 50) {
-              dataChartGoogle.push(["Mes", "Fechamento", "Medio", "Compra", "MediaMovel20", "MediaMovel50"]);
+              dataChartGoogle.push(["Mes", "Volume", "MediaMovel20", "MediaMovel50"]);
             } else {
-              dataChartGoogle.push(["Mes", "Fechamento", "Medio", "Compra", "MediaMovel20"]);
+              dataChartGoogle.push(["Mes", "Volume", "MediaMovel20"]);
             }
 
             //dataChartGoogle.push(["Mes", "Fechamento", "Medio", "Compra", "MediaMovel20", "MediaMovel50", "MediaMovel100", "MediaMovel200"]);
@@ -64,13 +59,13 @@
 
               //dataChartGoogle.push([label, valueHistorico.close, value.precoMedio, comprado, valueHistorico.mediaMovel20, valueHistorico.mediaMovel50, valueHistorico.mediaMovel100, valueHistorico.mediaMovel200]);
               if (value.listaDadosHistorico.length > 200) {
-                dataChartGoogle.push([label, valueHistorico.close, value.precoMedio, comprado, valueHistorico.mediaMovel20, valueHistorico.mediaMovel50, valueHistorico.mediaMovel100, valueHistorico.mediaMovel200]);
+                dataChartGoogle.push([label, valueHistorico.volume, valueHistorico.mediaMovel20, valueHistorico.mediaMovel50, valueHistorico.mediaMovel100, valueHistorico.mediaMovel200]);
               } else if (value.listaDadosHistorico.length > 100) {
-                dataChartGoogle.push([label, valueHistorico.close, value.precoMedio, comprado, valueHistorico.mediaMovel20, valueHistorico.mediaMovel50, valueHistorico.mediaMovel100]);
+                dataChartGoogle.push([label, valueHistorico.volume, valueHistorico.mediaMovel20, valueHistorico.mediaMovel50, valueHistorico.mediaMovel100]);
               } else if (value.listaDadosHistorico.length > 50) {
-                dataChartGoogle.push([label, valueHistorico.close, value.precoMedio, comprado, valueHistorico.mediaMovel20, valueHistorico.mediaMovel50]);
+                dataChartGoogle.push([label, valueHistorico.volume, valueHistorico.mediaMovel20, valueHistorico.mediaMovel50]);
               } else {
-                dataChartGoogle.push([label, valueHistorico.close, value.precoMedio, comprado, valueHistorico.mediaMovel20]);
+                dataChartGoogle.push([label, valueHistorico.volume, valueHistorico.mediaMovel20]);
               }
 
             });
@@ -103,10 +98,8 @@
         let labels = [];
         let dataChartAporte = [];
         let dataChartCompras = [];
-        let dataChartVendas = [];
         dataChartAporte.push(["Data", "Valor"]);
         dataChartCompras.push(["Ticker", "Valor"]);
-        dataChartVendas.push(["Ticker", "Valor"]);
         listaProcessar.listaDadosAportes.forEach((valueAporte, indexHistorico) => {
 
           let options = { year: 'numeric', month: 'short', day: 'numeric' };
@@ -125,17 +118,8 @@
           this.dadosResumo.valorTotalInvestido += valueCompras.valor;
         });
 
-        listaProcessar.listaDadosVendas.forEach((valueVendas, indexHistorico) => {
-          let options = { year: 'numeric', month: 'short', day: 'numeric' };
-          let label = new Date(valueVendas.data).toLocaleString('default', options).toString().toUpperCase()
-          labels.push(label);
-          dataChartVendas.push([valueVendas.ticker, valueVendas.valor]);
-          this.dadosResumo.valorTotalInvestido -= valueVendas.valor;
-        });
-
         this.listaResume = dataChartAporte;
         this.listaCompras = dataChartCompras;
-        this.listaVendas = dataChartVendas;
       }
     },
     components: {
@@ -155,7 +139,6 @@
         listaTickers : [],
         listaResume : [],
         listaCompras : [],
-        listaVendas : [],
         listaPatrimonio : [],
         user: {
           fullName: 'Mike Andrew',
