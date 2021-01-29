@@ -100,12 +100,50 @@
         </card>
       </div>-->
       <div class="col-lg-12">
+
+        <!-- GRÁFICO LINHAS VALOR FECHAMENTO -->
         <div class="chart-area">
           <GChart
             type="LineChart"
             :data="item.googleChartData"
             :options="chartOptions"/>
         </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-4">
+          <!-- GRÁFICO COLUNAS INVESTIDO / VALOR ATUAL -->
+          <div class="chart-area">
+            <GChart
+              type="ColumnChart"
+              :data="item.columnChartValor"
+              :options="columnChartOptionsValor"/>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <!-- GRÁFICO VOLUME MÉDIO -->
+          <div class="chart-area">
+            <GChart
+              type="ColumnChart"
+              :data="item.columnChartVolume"
+              :options="columnChartOptionsVolume"/>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <!-- GRÁFICO VOLUME MÉDIO -->
+          <div class="chart-area">
+            <GChart
+              type="LineChart"
+              :data="item.lineChartEvolucao"
+              :options="chartOptionsEvolucao"/>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-12">
+        <!-- TABELAS COM VOLUMES -->
         <div class="row" style="padding-top: 50px">
           <div class="col-6">
             <card title="Maiores Fechamentos">
@@ -151,6 +189,7 @@
           </div>
         </div>
       </div>
+
     </card>
   </div>
 </template>
@@ -176,6 +215,83 @@ export default {
       table2: {
         title: "Simple Table",
         columns: [...tableColumnsVolume]
+      },
+      columnChartOptionsVolume : {
+        title : 'VOLUME',
+        titleTextStyle : {
+          color : '#ffffff'
+        },
+        vAxis: {
+          minValue : 0,
+          textStyle : {
+            color: "#ffffff",
+          }
+        },
+        hAxis: {
+          titleTextStyle: {color: '#607d8b'},
+          gridlines: {color:'#37474f'},
+          textStyle: { color: '#b0bec5', fontName: 'Roboto', fontSize: '12', bold: true}
+        },
+        colors: ["#00d4bb"],
+        legend: { position: "none" },
+        backgroundColor: 'transparent',
+        height: 300,
+      },
+      columnChartOptionsValor : {
+        title : 'VALOR',
+        titleTextStyle : {
+          color : '#ffffff'
+        },
+        vAxis: {
+          minValue : 0,
+          textStyle : {
+            color: "#ffffff",
+          }
+        },
+        hAxis: {
+          titleTextStyle: {color: '#607d8b'},
+          gridlines: {color:'#37474f'},
+          textStyle: { color: '#b0bec5', fontName: 'Roboto', fontSize: '12', bold: true}
+        },
+        colors: ["#00d4bb"],
+        legend: { position: "none" },
+        backgroundColor: 'transparent',
+        height: 300,
+      },
+      chartOptionsEvolucao : {
+        hAxis: {
+          textPosition: 'none',
+          titleTextStyle: { color: '#607d8b' },
+          gridlines: { color:'#37474f' },
+          textStyle: { color: '#b0bec5', fontName: 'Roboto', fontSize: '0', bold: true }
+        },
+        vAxis: {
+          gridlines: {color:'#37474f', count:0},
+          baselineColor: 'transparent',
+          textStyle: { color: '#b0bec5', fontName: 'Roboto', fontSize: '12', bold: true }
+        },
+        legend: {
+          position: 'top', alignment: 'center',
+          textStyle: { color:'#607d8b', fontName: 'Roboto', fontSize: '12' }
+        },
+        colors: ["#0fc174","#00bcd4","#ff0000","#ff0000","#D4F1F4","#009688","#4caf50","#c6c6c6"],
+        backgroundColor: 'transparent',
+        //curveType: 'function',
+        lineWidth: 1,
+        height: 300,
+        /*chartArea: {
+          backgroundColor: "transparent",
+          width: '90%',
+          height: '85%'
+        },*/
+        /*series: {
+          0: { lineWidth: 1 },
+          2: { pointShape: 'square' , pointSize: 5 },
+          3: { lineWidth: 1 },
+          4: { lineWidth: 0.7 },
+          5: { lineWidth: 0.5 },
+          6: { lineWidth: 0.3 }
+        },*/
       },
       chartOptions: {
         hAxis: {

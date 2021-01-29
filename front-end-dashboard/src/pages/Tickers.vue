@@ -26,14 +26,23 @@
       efetuarBuscaDadosTickers() {
 
         this.$http.get("http://localhost:8085/ticker/cards").then(result => {
-          //this.listaTickers = (result.body);
+
           let listaAux = (result.body);
 
           this.listaPatrimonio.push(["Ticker", "Valor"]);
           listaAux.forEach((value, index) => {
 
+            let volumeMedio = 0;
+            let volumeMedioQuinzena = 0;
             let labels = [];
             let dataChartGoogle = [];
+            let dataChartEvolucaoPatrimonio = [];
+            let dataColumnChart = [];
+            let dataColumnChartVolume = [];
+
+            dataChartEvolucaoPatrimonio.push(["Data", "Investido", "Patrimonio"]);
+            dataColumnChartVolume.push(["Tipo", "Valor"]);
+            dataColumnChart.push(["Tipo", "Valor"]);
 
             if (value.listaDadosHistorico.length > 200) {
               dataChartGoogle.push(["Mes", "Fechamento", "Medio", "Compra", "MediaMovel20", "MediaMovel50", "MediaMovel100", "MediaMovel200"]);
@@ -46,6 +55,9 @@
             }
 
             //dataChartGoogle.push(["Mes", "Fechamento", "Medio", "Compra", "MediaMovel20", "MediaMovel50", "MediaMovel100", "MediaMovel200"]);
+            let inserirDadosEvolucao = false;
+            let quantidade = 0;
+            let valorAporte = 0;
             value.listaDadosHistorico.forEach((valueHistorico, indexHistorico) => {
               //console.log(moment(String(valueHistorico.data)).format('MM/DD/YYYY hh:mm'));
 
@@ -59,8 +71,15 @@
               value.listaDadosCompras.forEach((valueComprado, indexComprado) => {
                 if (new Date(valueComprado.data).toLocaleString('default', options).toString().toUpperCase() == label) {
                   comprado = (valueComprado.valor / valueComprado.quantidade);
+                  quantidade += valueComprado.quantidade;
+                  valorAporte += valueComprado.valor;
+                  inserirDadosEvolucao = true;
                 }
               });
+
+              if (inserirDadosEvolucao) {
+                dataChartEvolucaoPatrimonio.push([label, valorAporte, (valueHistorico.close * quantidade)]);
+              }
 
               //dataChartGoogle.push([label, valueHistorico.close, value.precoMedio, comprado, valueHistorico.mediaMovel20, valueHistorico.mediaMovel50, valueHistorico.mediaMovel100, valueHistorico.mediaMovel200]);
               if (value.listaDadosHistorico.length > 200) {
@@ -73,9 +92,28 @@
                 dataChartGoogle.push([label, valueHistorico.close, value.precoMedio, comprado, valueHistorico.mediaMovel20]);
               }
 
+              volumeMedio += valueHistorico.volume;
+
+              if (indexHistorico > (value.listaDadosHistorico.length - 16)) {
+                console.log(indexHistorico);
+                volumeMedioQuinzena += valueHistorico.volume;
+              }
             });
 
+            dataColumnChart.push(["Investido", value.valorTotalInvestido]);
+            dataColumnChart.push(["Atual", value.valorTotalAtual]);
+
+            let volumeMedioPeriodo = (volumeMedio / value.listaDadosHistorico.length);
+            let volumeQuinzena = (volumeMedioQuinzena / 15);
+            dataColumnChartVolume.push(["Médio", volumeMedioPeriodo]);
+            dataColumnChartVolume.push(["15 Dias", volumeQuinzena]);
+
             value["googleChartData"] = dataChartGoogle;
+            value["columnChartValor"] = dataColumnChart;
+            value["columnChartVolume"] = dataColumnChartVolume;
+            value["lineChartEvolucao"] = dataChartEvolucaoPatrimonio;
+
+
             this.listaTickers.push(value);
             let valorPatrimonioItem = parseFloat(value.valorAtual * value.quantidade);
 
