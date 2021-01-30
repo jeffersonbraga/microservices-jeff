@@ -149,7 +149,7 @@
           },
           pieHole: 0.3,
           //is3D: true,
-          slices: {
+          /*slices: {
             0: {offset: 0.1},
             1: {offset: 0.1},
             2: {offset: 0.1},
@@ -157,7 +157,7 @@
             4: {offset: 0.1},
             5: {offset: 0.1},
             6: {offset: 0.1},
-          },
+          },*/
         },
         dataChart : []
       }

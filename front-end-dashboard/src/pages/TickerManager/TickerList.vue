@@ -105,7 +105,7 @@
         <div class="chart-area">
           <GChart
             type="LineChart"
-            :data="item.googleChartData"
+            :data="item.chartFechamentos"
             :options="chartOptions"/>
         </div>
       </div>
@@ -116,7 +116,7 @@
           <div class="chart-area">
             <GChart
               type="ColumnChart"
-              :data="item.columnChartValor"
+              :data="item.chartInvestimento"
               :options="columnChartOptionsValor"/>
           </div>
         </div>
@@ -126,7 +126,7 @@
           <div class="chart-area">
             <GChart
               type="ColumnChart"
-              :data="item.columnChartVolume"
+              :data="item.chartVolume"
               :options="columnChartOptionsVolume"/>
           </div>
         </div>
@@ -136,7 +136,7 @@
           <div class="chart-area">
             <GChart
               type="LineChart"
-              :data="item.lineChartEvolucao"
+              :data="item.chartEvolucaoPatrimonio"
               :options="chartOptionsEvolucao"/>
           </div>
         </div>
