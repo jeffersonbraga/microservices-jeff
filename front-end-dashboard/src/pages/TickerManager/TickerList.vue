@@ -132,7 +132,7 @@
         </div>
 
         <div class="col-lg-4">
-          <!-- GRÁFICO VOLUME MÉDIO -->
+          <!-- GRÁFICO EVOLUÇÃO PATRIMONIO INVESTIDO -->
           <div class="chart-area">
             <GChart
               type="LineChart"
@@ -274,7 +274,7 @@ export default {
           position: 'top', alignment: 'center',
           textStyle: { color:'#607d8b', fontName: 'Roboto', fontSize: '12' }
         },
-        colors: ["#0fc174","#00bcd4","#ff0000","#ff0000","#D4F1F4","#009688","#4caf50","#c6c6c6"],
+        colors: ["#ff0000", "#0fc174","#00bcd4","#ff0000","#D4F1F4","#009688","#4caf50","#c6c6c6"],
         backgroundColor: 'transparent',
         //curveType: 'function',
         lineWidth: 1,

@@ -43,7 +43,7 @@ class TickerAgrupadosApi {
             itTicker ->
 
             val tickerCard = TickerCard()
-            tickerCard.ticker = itTicker.ticker
+            tickerCard.ticker = itTicker!!.ticker
 
             var quantidade = 0.0
             var valorTotalInvestido = 0.0
@@ -52,14 +52,14 @@ class TickerAgrupadosApi {
             var isTickerComprado = false
             listaCompras.filter {
                 itCompra ->
-                itCompra.ticker == itTicker.ticker
+                itCompra!!.ticker == itTicker.ticker
             }?.forEach {
                 itCompraTicker ->
-                quantidade += itCompraTicker.quantidade!!
+                quantidade += itCompraTicker!!.quantidade!!
                 valorTotalInvestido += itCompraTicker.valor!!
                 qtdCompras = qtdCompras.plus(1.0)
                 tickerCard.listaDadosCompras.add(itCompraTicker)
-                tickerCard.listaDadosHistorico = listaHistory.filter { itHistory -> itHistory.idTicker == itTicker.ticker }.toMutableList()
+                tickerCard.listaDadosHistorico = listaHistory.filter { itHistory -> itHistory!!.idTicker == itTicker.ticker }.toMutableList()
 
                 isTickerComprado = true
             }

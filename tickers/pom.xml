@@ -103,7 +103,7 @@
 							<jvmFlag>-Xms128m</jvmFlag>
 							<jvmFlag>-Xmx256m</jvmFlag>
 						</jvmFlags>
-						<mainClass>br.com.jeffersonbraga.tickers.TickersApplication</mainClass>
+						<mainClass>br.com.jeffersonbraga.tickers.TickersApplication.kt</mainClass>
 					</container>
 				</configuration>
 			</plugin>

@@ -107,20 +107,31 @@ class TickerCardApi {
             if (isTickerComprado) {
                 tickerCard.percentualDiferenca = (tickerCard.valorAtual!!.div(tickerCard.precoMedio!!).times(100.0)).minus(100.0)
                 tickerCard.listaDadosHistorico?.sortedBy { it.data }
-                TickerService.getMediaMovel(tickerCard.listaDadosHistorico)
 
-                tickerCard.mediaMayer = tickerCard?.valorAtual?.div(
-                    tickerCard?.listaDadosHistorico?.last()?.mediaMovel200?:
-                    tickerCard?.listaDadosHistorico?.last()?.mediaMovel100?:
-                    tickerCard?.listaDadosHistorico?.last()?.mediaMovel50?:
-                    tickerCard?.listaDadosHistorico?.last()?.mediaMovel20?:
-                    1.0)
+                if (tickerCard.listaDadosHistorico?.size?:0 > 20) {
+                    TickerService.getMediaMovel(tickerCard.listaDadosHistorico)
 
-                tickerCard.listaDadosTop10MelhoresPrecos = tickerCard?.listaDadosHistorico?.sortedByDescending { it.close }?.subList(0,10)?.toMutableList()
-                tickerCard.listaDadosTop10MenoresPrecos = tickerCard?.listaDadosHistorico?.sortedBy { it.close }?.subList(0,10)?.toMutableList()
+                    tickerCard.mediaMayer = tickerCard?.valorAtual?.div(
+                        tickerCard?.listaDadosHistorico?.last()?.mediaMovel200
+                            ?: tickerCard?.listaDadosHistorico?.last()?.mediaMovel100
+                            ?: tickerCard?.listaDadosHistorico?.last()?.mediaMovel50
+                            ?: tickerCard?.listaDadosHistorico?.last()?.mediaMovel20 ?: 1.0
+                    )
+                }
 
-                tickerCard.listaDadosTop10MelhoresVolume = tickerCard?.listaDadosHistorico?.sortedByDescending { it.volume }?.subList(0,10)?.toMutableList()
-                tickerCard.listaDadosTop10MenoresVolume = tickerCard?.listaDadosHistorico?.sortedBy { it.volume }?.subList(0,10)?.toMutableList()
+                if (tickerCard.listaDadosHistorico?.size?:0 > 10) {
+                    tickerCard.listaDadosTop10MelhoresPrecos =
+                        tickerCard?.listaDadosHistorico?.sortedByDescending { it.close }?.subList(0, 10)
+                            ?.toMutableList()
+                    tickerCard.listaDadosTop10MenoresPrecos =
+                        tickerCard?.listaDadosHistorico?.sortedBy { it.close }?.subList(0, 10)?.toMutableList()
+
+                    tickerCard.listaDadosTop10MelhoresVolume =
+                        tickerCard?.listaDadosHistorico?.sortedByDescending { it.volume }?.subList(0, 10)
+                            ?.toMutableList()
+                    tickerCard.listaDadosTop10MenoresVolume =
+                        tickerCard?.listaDadosHistorico?.sortedBy { it.volume }?.subList(0, 10)?.toMutableList()
+                }
 
                 tickerCard?.listaDadosHistorico?.sortedBy { it.close }?.elementAtOrNull((tickerCard?.listaDadosHistorico?.size?.div(2)?:0))
                     ?.also { tickerCard?.mediana = it.close }

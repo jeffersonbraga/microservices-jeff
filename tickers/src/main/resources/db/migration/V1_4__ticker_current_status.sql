@@ -4,5 +4,5 @@ CREATE TABLE TICKER_CURRENT_STATUS (
                                     VALOR_ATUAL double precision NOT NULL,
                                     FECHAMENTO_ANTERIOR double precision NOT NULL,
                                     MUDANCA double precision NOT NULL,
-                                    AVG50 double precision NOT NULL,
-                                    AVG200 double precision NOT NULL);
+                                    AVG50 double precision,
+                                    AVG200 double precision);

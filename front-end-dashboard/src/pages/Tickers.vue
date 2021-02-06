@@ -37,8 +37,10 @@
           chartFechamentos.push(["Mes", "Fechamento", "Medio", "Compra", "MediaMovel20", "MediaMovel50", "MediaMovel100"]);
         } else if (ticker.listaDadosHistorico.length > 50) {
           chartFechamentos.push(["Mes", "Fechamento", "Medio", "Compra", "MediaMovel20", "MediaMovel50"]);
-        } else {
+        } else if (ticker.listaDadosHistorico.length > 20) {
           chartFechamentos.push(["Mes", "Fechamento", "Medio", "Compra", "MediaMovel20"]);
+        } else {
+          chartFechamentos.push(["Mes", "Fechamento", "Medio", "Compra"]);
         }
 
         ticker.listaDadosHistorico.forEach((valueHistorico, indexHistorico) => {
@@ -75,13 +77,15 @@
             chartFechamentos.push([label, valueHistorico.close, ticker.precoMedio, comprado, valueHistorico.mediaMovel20, valueHistorico.mediaMovel50, valueHistorico.mediaMovel100]);
           } else if (ticker.listaDadosHistorico.length > 50) {
             chartFechamentos.push([label, valueHistorico.close, ticker.precoMedio, comprado, valueHistorico.mediaMovel20, valueHistorico.mediaMovel50]);
-          } else {
+          } else if (ticker.listaDadosHistorico.length > 20) {
             chartFechamentos.push([label, valueHistorico.close, ticker.precoMedio, comprado, valueHistorico.mediaMovel20]);
+          } else {
+            chartFechamentos.push([label, valueHistorico.close, ticker.precoMedio, comprado]);
           }
 
           volumeMedio += valueHistorico.volume;
 
-          if (indexHistorico > (ticker.listaDadosHistorico.length - 16)) {
+          if ((ticker.listaDadosHistorico.length > 20) && indexHistorico > (ticker.listaDadosHistorico.length - 16)) {
             volumeMedioQuinzena += valueHistorico.volume;
           }
         });

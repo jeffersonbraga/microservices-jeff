@@ -64,8 +64,8 @@ class TickerManagerApi {
                 val price = stock.quote.price.toDouble()
                 val previousClose = stock.quote.previousClose.toDouble()
                 val change = stock.quote.changeInPercent.toDouble()
-                val avg50 = stock.quote.priceAvg50.toDouble()
-                val avg200 = stock.quote.priceAvg200.toDouble()
+                val avg50 = stock.quote.priceAvg50?.toDouble()
+                val avg200 = stock.quote.priceAvg200?.toDouble()
 
                 val peg = stock.stats.peg
                 val dividend = stock.dividend.annualYieldPercent

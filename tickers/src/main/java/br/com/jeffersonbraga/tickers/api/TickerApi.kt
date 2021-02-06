@@ -26,12 +26,12 @@ class TickerApi {
     @Autowired
     private val repository: TickerRepository? = null
     @GetMapping
-    fun all(): List<Ticker> {
+    fun all(): MutableList<Ticker?> {
         return repository!!.findAll()
     }
 
     @GetMapping("{id}")
-    fun one(@PathVariable("id") id: Long): Optional<Ticker> {
+    fun one(@PathVariable("id") id: Long): Optional<Ticker?> {
         return repository!!.findById(id)
     }
 
